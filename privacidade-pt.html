@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="pt">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aire sin sustos · Política de privacidade</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #191c1e; background: #f6fafe;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dfe3e7; background: #0f1417; }
+    td, th { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #1e6a8d; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #8ccff3; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #1e6a8d; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Política de privacidade</h1>
+<p class="fecha">Aplicação <strong>Aire sin sustos</strong> (<code>com.jrsoft.alergiasaire</code>) · Última atualização: 27 de setembro de 2026</p>
+
+<div class="clave">
+<p><strong>Numa frase:</strong> esta aplicação não tem contas de utilizador e
+<strong>as suas alergias, os seus locais e o seu diário não saem do telemóvel</strong>.
+Para lhe dar a previsão, envia apenas o imprescindível: a zona de cerca de 50 km
+onde se encontra o local, ao nosso site de dados, e as respetivas coordenadas
+arredondadas a um quilómetro, ao serviço meteorológico.</p>
+</div>
+
+<h2>Quem é o responsável</h2>
+<p>O responsável pelo tratamento é <strong>JR Soft</strong>, nome comercial de <strong>Javier Román Sáez</strong>, programador da aplicação. Pode contactá-lo através de <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>O que esta aplicação NÃO faz</h2>
+<ul>
+  <li>Não há registo, conta, utilizador nem palavra-passe. Nunca lhe é pedido um endereço de e-mail, um número de telefone nem um nome.</li>
+  <li>Não existe nenhuma ferramenta de análise própria: nem Google Analytics, nem Firebase, nem relatórios de falhas. A biblioteca de publicidade da Google, essa sim, envia à Google dados técnicos próprios; que dados e para quê, explica-se mais abaixo, em «Dados que saem do telemóvel».</li>
+  <li>Não são vendidos, alugados nem cedidos dados a terceiros para fins comerciais.</li>
+  <li><strong>As suas alergias e o seu diário de sintomas não são enviados para lado nenhum.</strong> São dados de saúde e ficam no armazenamento privado da aplicação. Os níveis de pólen são calculados no próprio telemóvel: os servidores aos quais os dados são pedidos não sabem a que tem alergia nem como se sente.</li>
+  <li>Não é utilizada a localização precisa. Só é pedida a <strong>aproximada</strong>, e apenas se escolher «Usar a minha localização». A aplicação <strong>nunca a pede em segundo plano</strong>.</li>
+  <li>Não há notificações enviadas a partir de um servidor: os alertas são preparados no próprio telemóvel com os dados já descarregados.</li>
+</ul>
+
+<h2>Dados que ficam apenas no telemóvel</h2>
+<p>Esta informação é guardada no armazenamento privado da aplicação e não sai dela. Desaparece por completo se desinstalar a aplicação ou apagar os respetivos dados nas definições do Android.</p>
+<ul>
+  <li><strong>As suas alergias</strong>: que pólenes e o que mais escolheu acompanhar.</li>
+  <li><strong>Os seus locais</strong>: as cidades que guarda e «A minha localização», com o respetivo nome e as respetivas coordenadas.</li>
+  <li><strong>O diário</strong>: como se sentia em cada dia (de 0 a 4), que sintomas tinha (nariz, olhos, peito, garganta e ouvidos, ou pele), se tomou a medicação (apenas sim ou não; a aplicação não pergunta qual), uma nota, se a escrever, o nível de cada alergénio nesse dia e o nome do local.</li>
+  <li>As suas definições: tema, idioma, alertas e a hora e o texto do lembrete da medicação.</li>
+  <li>Uma <strong>cópia das últimas previsões</strong> descarregadas, para que a aplicação funcione sem ligação à Internet.</li>
+  <li>O facto de ter aceitado o aviso do primeiro arranque.</li>
+</ul>
+<p>O diário pode ser exportado como um ficheiro CSV. <strong>Só sai do telemóvel se o partilhar</strong>, e vai para onde escolher.</p>
+
+<h2>Dados que saem do telemóvel</h2>
+
+<h3>A previsão do pólen, das poeiras do Sara e da qualidade do ar</h3>
+<p>Estes dados são gerados todos os dias a partir dos modelos do Serviço de Monitorização da Atmosfera do Copernicus (CAMS) e publicados no nosso site de dados, <code>aire-sin-sustos.pages.dev</code>, alojado na <strong>Cloudflare</strong>. O site está dividido em quadrados de meio grau (cerca de 50 km de lado), e a aplicação descarrega o quadrado do local que está a consultar. <strong>O pedido contém apenas o nome do quadrado</strong> (por exemplo, «37.0_-4.0»), e não as coordenadas do local. Não temos servidores próprios nem guardamos registos; a Cloudflare recebe o seu endereço IP, como qualquer servidor web, e trata-o de acordo com a respetiva política.</p>
+
+<h3>A previsão do tempo: MET Norway</h3>
+<p>Os dados do tempo são fornecidos pelo Instituto Meteorológico da Noruega (<strong>MET Norway</strong>). Para os pedir, a aplicação envia-lhe as <strong>coordenadas do local arredondadas a duas casas decimais</strong>, cerca de um quilómetro, e um identificador da aplicação (o <em>User-Agent</em> exigido pelas respetivas condições). Segundo essas condições, o MET Norway guarda nos seus registos, no seu centro de dados em Oslo, o endereço IP e as coordenadas de cada pedido.</p>
+
+<h3>O nome do local e a pesquisa de cidades</h3>
+<p>Quando utiliza a sua localização, a aplicação pergunta ao próprio Android o nome do local que corresponde a essas coordenadas, e a pesquisa de cidades envia ao Android o texto que escreve. Na maioria dos telemóveis, esse serviço (o geocodificador do Android) é prestado pela <strong>Google</strong>, que o trata de acordo com a respetiva política de privacidade.</p>
+
+<h3>Endereço IP</h3>
+<p>Como em qualquer aplicação que se liga à Internet, os servidores com que a aplicação comunica recebem o seu endereço IP: a Cloudflare (os dados do pólen e do ar), o MET Norway (o tempo) e a Google (o nome dos locais e a publicidade).</p>
+<p>A Google pode utilizar esse endereço IP para estimar uma <strong>localização aproximada</strong>, ao nível de uma cidade ou de uma região, e usá-la para escolher e medir os anúncios e prevenir fraudes.</p>
+
+<h3>Publicidade: Google AdMob</h3>
+<p>A aplicação inclui o SDK de publicidade da Google (AdMob) e, por isso, declara a autorização <code>com.google.android.gms.permission.AD_ID</code>, que dá acesso ao ID de publicidade do Android. Este ID pode ser reposto e eliminado em <em>Definições do Android → Google → Anúncios</em>.</p>
+<p>Além do ID de publicidade, o SDK do AdMob recolhe o ID do conjunto de aplicações (app set ID), as interações com a aplicação e com os anúncios (quando a aplicação é aberta, os toques e as reproduções de vídeo) e dados de diagnóstico (tempo de arranque, bloqueios e consumo de energia). A Google utiliza-os para apresentar e medir a publicidade, para estatísticas e para prevenir fraudes, de acordo com a sua própria política, cuja ligação se encontra em «Terceiros envolvidos».</p>
+<p>Nos países do Espaço Económico Europeu e no Reino Unido, a aplicação mostra o formulário de consentimento da Google (UMP) antes de apresentar publicidade personalizada. Pode alterar a sua escolha a qualquer momento em Definições → Privacidade dos anúncios.</p>
+<p><strong>As suas alergias, os seus locais e o seu diário nunca chegam à publicidade.</strong> O pedido de anúncio é enviado sem nenhum desses dados. Se recusar o consentimento, verá publicidade não personalizada e a aplicação funcionará exatamente da mesma forma: não há nenhuma função bloqueada.</p>
+
+<h2>Terceiros envolvidos</h2>
+<table>
+  <tr><th>Serviço</th><th>Para quê</th><th>Política</th></tr>
+  <tr>
+    <td>Cloudflare</td>
+    <td>Aloja o site com os dados do pólen, das poeiras do Sara e da qualidade do ar</td>
+    <td><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td>
+  </tr>
+  <tr>
+    <td>MET Norway</td>
+    <td>Previsão do tempo</td>
+    <td><a href="https://www.met.no/en/About-us/privacy">met.no/en/About-us/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google (geocodificador do Android)</td>
+    <td>O nome dos locais e a pesquisa de cidades</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Publicidade e formulário de consentimento</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+</table>
+<p>Os dados do pólen, das poeiras do Sara e da qualidade do ar contêm informação modificada do Serviço de Monitorização da Atmosfera do Copernicus; nem a Comissão Europeia nem o ECMWF são responsáveis pela utilização que dela possa ser feita. A previsão do tempo é do MET Norway. Ambas são publicadas com a licença <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Esta aplicação não está afiliada ao Copernicus, ao ECMWF nem ao MET Norway.</p>
+
+<h2>Fundamento jurídico e conservação</h2>
+<p>Os dados de saúde que anota (as suas alergias e o seu diário) são tratados <strong>unicamente no seu dispositivo</strong> e sob o seu controlo: não há comunicação a terceiros e não existe nenhuma cópia em poder do responsável pelo tratamento. A localização é utilizada para lhe prestar o serviço que pede, a previsão da sua zona, e apenas se optar por utilizá-la. No caso da publicidade personalizada, o fundamento jurídico é o seu <strong>consentimento</strong>, recolhido através do formulário da Google (UMP) e revogável a qualquer momento nas definições da aplicação.</p>
+<p>Tudo o que a aplicação guarda permanece até que a desinstale ou apague os respetivos dados.</p>
+
+<h2>Os seus direitos</h2>
+<p>Se residir na União Europeia, o RGPD reconhece-lhe os direitos de acesso, retificação, apagamento, limitação do tratamento, portabilidade e oposição. Na prática, e dado que esta aplicação não guarda nenhum dado associado à sua pessoa fora do telemóvel:</p>
+<ul>
+  <li><strong>Apagamento:</strong> desinstalar a aplicação, ou apagar os respetivos dados nas definições do Android, elimina tudo o que esta guarda. Também pode apagar locais e anotações do diário na própria aplicação, e retirar a autorização de localização nas definições do Android. O ID de publicidade é reposto ou eliminado em <em>Definições do Android → Google → Anúncios</em>.</li>
+  <li><strong>Oposição e retirada do consentimento:</strong> Definições → Privacidade dos anúncios.</li>
+  <li><strong>Acesso e portabilidade:</strong> o diário pode ser exportado a partir da aplicação. Pode escrever para o endereço de contacto, mas, como não existem contas nem identificadores de utilizador, o responsável pelo tratamento não tem nenhum dado «seu» para localizar fora do telemóvel. Os dados tratados pela Google, pelo MET Norway e pela Cloudflare são geridos por estas entidades, e os direitos sobre eles exercem-se junto de cada uma, nos endereços indicados em «Terceiros envolvidos».</li>
+</ul>
+<p>Pode também apresentar reclamação à autoridade de controlo do seu país. Em Espanha, é a <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> (Agência Espanhola de Proteção de Dados).</p>
+
+<h2>Menores</h2>
+<p>Esta aplicação não se destina a menores de 13 anos e não recolhe conscientemente dados sobre eles.</p>
+
+<h2>Alterações a esta política</h2>
+<p>Se esta política mudar de forma substancial, a nova versão será publicada neste mesmo endereço com uma data de atualização diferente. Esta página é uma tradução; em caso de divergência, prevalece a <a href="privacidad-es.html">versão espanhola</a>.</p>
+
+<h2>Aviso importante sobre o serviço</h2>
+<p>Esta aplicação <strong>não é um dispositivo médico</strong>. Informa sobre os níveis ambientais de pólen, poeiras do Sara e poluição; não diagnostica nem trata nenhuma doença e não substitui o conselho do seu médico ou do seu alergologista. Os níveis provêm de modelos de previsão e, para alguns pólenes, de um calendário indicativo: podem não coincidir com o que há na sua rua. Se tiver dificuldade em respirar, ligue 112.</p>
+
+<footer>
+<p>Aire sin sustos · JR Soft (Javier Román Sáez) · <code>com.jrsoft.alergiasaire</code> · Contacto: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+</body>
+</html>

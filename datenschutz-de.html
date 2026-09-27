@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aire sin sustos · Datenschutzerklärung</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #191c1e; background: #f6fafe;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dfe3e7; background: #0f1417; }
+    td, th { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #1e6a8d; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #8ccff3; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #1e6a8d; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Datenschutzerklärung</h1>
+<p class="fecha">App <strong>Aire sin sustos</strong> (<code>com.jrsoft.alergiasaire</code>) · Letzte Aktualisierung: 27. September 2026</p>
+
+<div class="clave">
+<p><strong>In einem Satz:</strong> Diese App hat keine Benutzerkonten, und
+<strong>deine Allergien, deine Orte und dein Tagebuch verlassen dein Handy nicht</strong>.
+Um dir die Vorhersage zu liefern, sendet sie nur das Nötigste: das etwa 50 km
+große Gebiet, in dem der Ort liegt, an unsere Daten-Website, und die auf einen
+Kilometer gerundeten Koordinaten des Ortes an den Wetterdienst.</p>
+</div>
+
+<h2>Wer verantwortlich ist</h2>
+<p>Verantwortlicher für die Datenverarbeitung ist <strong>JR Soft</strong>, Handelsname von <strong>Javier Román Sáez</strong>, dem Entwickler der App. Du erreichst ihn unter <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>Was diese App NICHT tut</h2>
+<ul>
+  <li>Es gibt keine Registrierung, kein Konto, keinen Benutzernamen und kein Passwort. Du wirst nie nach einer E-Mail-Adresse, einer Telefonnummer oder einem Namen gefragt.</li>
+  <li>Es gibt kein eigenes Analysetool: weder Google Analytics noch Firebase noch Absturzberichte. Die Werbebibliothek von Google sendet allerdings eigene technische Daten an Google; welche Daten und wozu, steht weiter unten unter „Daten, die dein Handy verlassen“.</li>
+  <li>Es werden keine Daten zu kommerziellen Zwecken an Dritte verkauft, vermietet oder weitergegeben.</li>
+  <li><strong>Deine Allergien und dein Symptomtagebuch werden nirgendwohin gesendet.</strong> Es sind Gesundheitsdaten, und sie bleiben im privaten Speicher der App. Die Pollenwerte werden auf dem Handy selbst berechnet: Die Server, von denen die Daten abgerufen werden, wissen nicht, worauf du allergisch bist oder wie es dir geht.</li>
+  <li>Der genaue Standort wird nicht verwendet. Angefordert wird nur der <strong>ungefähre</strong>, und nur, wenn du „Meinen Standort nutzen“ wählst. Die App <strong>fordert ihn nie im Hintergrund an</strong>.</li>
+  <li>Es gibt keine Benachrichtigungen, die von einem Server gesendet werden: Die Warnungen werden auf dem Handy selbst aus den bereits heruntergeladenen Daten erstellt.</li>
+</ul>
+
+<h2>Daten, die nur auf deinem Handy bleiben</h2>
+<p>Diese Informationen werden im privaten Speicher der App abgelegt und verlassen die App nicht. Sie verschwinden vollständig, wenn du die App deinstallierst oder ihre Daten in den Android-Einstellungen löschst.</p>
+<ul>
+  <li><strong>Deine Allergien</strong>: welche Pollen und was du sonst noch zum Beobachten ausgewählt hast.</li>
+  <li><strong>Deine Orte</strong>: die Städte, die du speicherst, und „Mein Standort“, jeweils mit Namen und Koordinaten.</li>
+  <li><strong>Das Tagebuch</strong>: wie es dir an jedem Tag ging (von 0 bis 4), welche Symptome du hattest (Nase, Augen, Brust, Hals und Ohren oder Haut), ob du deine Medikamente genommen hast (nur Ja oder Nein; die App fragt nicht, welche), eine Notiz, falls du eine schreibst, der Wert jedes Allergens an diesem Tag und der Name des Ortes.</li>
+  <li>Deine Einstellungen: Design, Sprache, Warnungen sowie Uhrzeit und Text der Medikamentenerinnerung.</li>
+  <li>Eine <strong>Kopie der zuletzt heruntergeladenen Vorhersagen</strong>, damit die App ohne Internetverbindung funktioniert.</li>
+  <li>Dass du den Hinweis beim ersten Start akzeptiert hast.</li>
+</ul>
+<p>Das Tagebuch kann als CSV-Datei exportiert werden. <strong>Es verlässt dein Handy nur, wenn du es teilst</strong>, und geht an ein Ziel deiner Wahl.</p>
+
+<h2>Daten, die dein Handy verlassen</h2>
+
+<h3>Die Vorhersage für Pollen, Saharastaub und Luftqualität</h3>
+<p>Diese Daten werden jeden Tag aus den Modellen des Copernicus-Dienstes zur Überwachung der Atmosphäre (CAMS) erzeugt und auf unserer Daten-Website <code>aire-sin-sustos.pages.dev</code> veröffentlicht, die bei <strong>Cloudflare</strong> gehostet wird. Die Website ist in Quadrate von einem halben Grad (etwa 50 km Seitenlänge) aufgeteilt, und die App lädt das Quadrat des Ortes herunter, den du dir ansiehst. <strong>Die Anfrage enthält nur den Namen des Quadrats</strong> (zum Beispiel „37.0_-4.0“), nicht die Koordinaten des Ortes. Wir haben keine eigenen Server und speichern keine Protokolle; Cloudflare erhält wie jeder Webserver deine IP-Adresse und verarbeitet sie gemäß seiner Datenschutzerklärung.</p>
+
+<h3>Die Wettervorhersage: MET Norway</h3>
+<p>Die Wetterdaten liefert das Norwegische Meteorologische Institut (<strong>MET Norway</strong>). Um sie abzurufen, sendet die App an MET Norway die <strong>auf zwei Dezimalstellen gerundeten Koordinaten des Ortes</strong>, also auf etwa einen Kilometer genau, und eine Kennung der App (den <em>User-Agent</em>, den seine Nutzungsbedingungen verlangen). Laut diesen Bedingungen speichert MET Norway die IP-Adresse und die Koordinaten jeder Anfrage in seinen Protokollen, in seinem Rechenzentrum in Oslo.</p>
+
+<h3>Der Ortsname und die Städtesuche</h3>
+<p>Wenn du deinen Standort verwendest, fragt die App Android selbst nach dem Namen des Ortes, der zu diesen Koordinaten gehört, und die Städtesuche sendet den Text, den du eingibst, an Android. Auf den meisten Handys wird dieser Dienst (der Geocoder von Android) von <strong>Google</strong> bereitgestellt, das die Daten gemäß seiner Datenschutzerklärung verarbeitet.</p>
+
+<h3>IP-Adresse</h3>
+<p>Wie bei jeder App, die sich mit dem Internet verbindet, erhalten die Server, mit denen die App kommuniziert, deine IP-Adresse: Cloudflare (die Pollen- und Luftdaten), MET Norway (das Wetter) und Google (die Ortsnamen und die Werbung).</p>
+<p>Google kann diese IP-Adresse nutzen, um einen <strong>ungefähren Standort</strong> zu schätzen, etwa auf Ebene einer Stadt oder einer Region, und damit Anzeigen auszuwählen und zu messen sowie Betrug zu verhindern.</p>
+
+<h3>Werbung: Google AdMob</h3>
+<p>Die App enthält das Werbe-SDK von Google (AdMob) und deklariert daher die Berechtigung <code>com.google.android.gms.permission.AD_ID</code>, die Zugriff auf die Werbe-ID von Android gewährt. Diese ID lässt sich unter <em>Android-Einstellungen → Google → Anzeigen</em> zurücksetzen und löschen.</p>
+<p>Neben der Werbe-ID erfasst das AdMob-SDK die App-Set-ID, die Interaktionen mit der App und mit den Anzeigen (wann die App geöffnet wird, Antippen und Videowiedergaben) sowie Diagnosedaten (Startzeit, Hänger und Energieverbrauch). Google verwendet sie, um Werbung auszuliefern und zu messen, für Statistiken und zur Betrugsprävention, gemäß seiner eigenen Richtlinie, die unter „Beteiligte Dritte“ verlinkt ist.</p>
+<p>In den Ländern des Europäischen Wirtschaftsraums und im Vereinigten Königreich zeigt die App das Einwilligungsformular von Google (UMP) an, bevor personalisierte Werbung ausgeliefert wird. Du kannst deine Entscheidung jederzeit unter Einstellungen → Datenschutz bei Werbung ändern.</p>
+<p><strong>Deine Allergien, deine Orte und dein Tagebuch fließen nie in die Werbung ein.</strong> Die Anzeigenanfrage wird ohne jegliche dieser Daten gesendet. Wenn du die Einwilligung ablehnst, siehst du nicht personalisierte Werbung, und die App funktioniert genau gleich: Keine Funktion ist gesperrt.</p>
+
+<h2>Beteiligte Dritte</h2>
+<table>
+  <tr><th>Dienst</th><th>Wofür</th><th>Richtlinie des Anbieters</th></tr>
+  <tr>
+    <td>Cloudflare</td>
+    <td>Hostet die Website mit den Daten zu Pollen, Saharastaub und Luftqualität</td>
+    <td><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td>
+  </tr>
+  <tr>
+    <td>MET Norway</td>
+    <td>Wettervorhersage</td>
+    <td><a href="https://www.met.no/en/About-us/privacy">met.no/en/About-us/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google (Android-Geocoder)</td>
+    <td>Ortsnamen und Städtesuche</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Werbung und Einwilligungsformular</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+</table>
+<p>Die Daten zu Pollen, Saharastaub und Luftqualität enthalten veränderte Informationen des Copernicus-Dienstes zur Überwachung der Atmosphäre; weder die Europäische Kommission noch das ECMWF sind für eine etwaige Verwendung dieser Informationen verantwortlich. Die Wettervorhersage stammt von MET Norway. Beide werden unter der Lizenz <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> veröffentlicht. Diese App ist nicht mit Copernicus, dem ECMWF oder MET Norway verbunden.</p>
+
+<h2>Rechtsgrundlage und Speicherdauer</h2>
+<p>Die Gesundheitsdaten, die du einträgst (deine Allergien und dein Tagebuch), werden <strong>ausschließlich auf deinem Gerät</strong> und unter deiner Kontrolle verarbeitet: Es findet keine Übermittlung an Dritte statt, und beim Verantwortlichen liegt keine Kopie davon vor. Der Standort wird verwendet, um dir den Dienst zu erbringen, den du anforderst, nämlich die Vorhersage für deine Gegend, und nur, wenn du dich für seine Verwendung entscheidest. Bei personalisierter Werbung ist die Rechtsgrundlage deine <strong>Einwilligung</strong>, die über das Formular von Google (UMP) eingeholt wird und jederzeit in den Einstellungen der App widerrufen werden kann.</p>
+<p>Alles, was die App speichert, bleibt erhalten, bis du sie deinstallierst oder ihre Daten löschst.</p>
+
+<h2>Deine Rechte</h2>
+<p>Wenn du in der Europäischen Union wohnst, stehen dir nach der DSGVO die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch zu. Da diese App außerhalb deines Handys keine Daten speichert, die mit deiner Person verknüpft sind, gilt in der Praxis:</p>
+<ul>
+  <li><strong>Löschung:</strong> Wenn du die App deinstallierst oder ihre Daten in den Android-Einstellungen löschst, wird alles entfernt, was sie speichert. Du kannst Orte und Tagebucheinträge auch direkt in der App löschen und die Standortberechtigung in den Android-Einstellungen entziehen. Die Werbe-ID wird unter <em>Android-Einstellungen → Google → Anzeigen</em> zurückgesetzt oder gelöscht.</li>
+  <li><strong>Widerspruch und Widerruf der Einwilligung:</strong> Einstellungen → Datenschutz bei Werbung.</li>
+  <li><strong>Auskunft und Datenübertragbarkeit:</strong> Das Tagebuch kann aus der App exportiert werden. Du kannst an die Kontaktadresse schreiben, aber da es weder Konten noch Benutzerkennungen gibt, hat der Verantwortliche außerhalb deines Handys keine Daten, die er als „deine“ ausfindig machen könnte. Die Daten, die Google, MET Norway und Cloudflare verarbeiten, werden von ihnen selbst verwaltet, und die Rechte daran werden gegenüber jedem von ihnen ausgeübt, über die unter „Beteiligte Dritte“ angegebenen Adressen.</li>
+</ul>
+<p>Du kannst außerdem eine Beschwerde bei der Aufsichtsbehörde deines Landes einreichen. In Spanien ist das die <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> (spanische Datenschutzbehörde).</p>
+
+<h2>Minderjährige</h2>
+<p>Diese App richtet sich nicht an Kinder unter 13 Jahren und erhebt wissentlich keine Daten von ihnen.</p>
+
+<h2>Änderungen dieser Datenschutzerklärung</h2>
+<p>Wenn sich diese Datenschutzerklärung wesentlich ändert, wird die neue Fassung unter dieser Adresse mit einem anderen Aktualisierungsdatum veröffentlicht. Diese Seite ist eine Übersetzung; im Zweifel gilt die <a href="privacidad-es.html">spanische Fassung</a>.</p>
+
+<h2>Wichtiger Hinweis zum Dienst</h2>
+<p>Diese App <strong>ist kein Medizinprodukt</strong>. Sie informiert über die Werte von Pollen, Saharastaub und Luftverschmutzung in der Umgebung; sie diagnostiziert und behandelt keine Krankheiten und ersetzt nicht den Rat deines Arztes oder Allergologen. Die Werte stammen aus Vorhersagemodellen und bei einigen Pollen aus einem Kalender mit Richtwerten: Sie können von dem abweichen, was es in deiner Straße gibt. Wenn du Schwierigkeiten beim Atmen hast, ruf die 112 an.</p>
+
+<footer>
+<p>Aire sin sustos · JR Soft (Javier Román Sáez) · <code>com.jrsoft.alergiasaire</code> · Kontakt: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+</body>
+</html>

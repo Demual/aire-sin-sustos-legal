@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="ca">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aire sin sustos · Política de privadesa</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font: 17px/1.65 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    max-width: 46rem; margin: 0 auto; padding: 2rem 1.25rem 5rem;
+    color: #191c1e; background: #f6fafe;
+  }
+  @media (prefers-color-scheme: dark) {
+    body { color: #dfe3e7; background: #0f1417; }
+    td, th { border-color: #333 !important; }
+  }
+  h1 { font-size: 1.9rem; line-height: 1.2; margin-bottom: .25rem; }
+  h2 { font-size: 1.25rem; margin-top: 2.5rem; color: #1e6a8d; }
+  h3 { font-size: 1.05rem; margin-top: 1.75rem; }
+  @media (prefers-color-scheme: dark) { h2 { color: #8ccff3; } }
+  .fecha { opacity: .7; font-size: .9rem; }
+  .clave { border-left: 4px solid #1e6a8d; padding: .5rem 0 .5rem 1rem; margin: 1.5rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1rem 0; font-size: .95rem; }
+  th, td { text-align: left; padding: .6rem .5rem; border-bottom: 1px solid #ddd; vertical-align: top; }
+  th { font-weight: 600; }
+  code { background: rgba(127,127,127,.15); padding: .1rem .3rem; border-radius: 3px; font-size: .9em; }
+  footer { margin-top: 3rem; font-size: .9rem; opacity: .75; }
+</style>
+</head>
+<body>
+
+<h1>Política de privadesa</h1>
+<p class="fecha">Aplicació <strong>Aire sin sustos</strong> (<code>com.jrsoft.alergiasaire</code>) · Darrera actualització: 27 de setembre de 2026</p>
+
+<div class="clave">
+<p><strong>En una frase:</strong> aquesta aplicació no té comptes d'usuari i
+<strong>les teves al·lèrgies, els teus llocs i el teu diari no surten del teu telèfon</strong>.
+Per donar-te la previsió només envia l'imprescindible: la zona d'uns 50 km
+on es troba el lloc, al nostre web de dades, i les seves coordenades arrodonides
+a un quilòmetre, al servei meteorològic.</p>
+</div>
+
+<h2>Qui és el responsable</h2>
+<p>El responsable del tractament és <strong>JR Soft</strong>, nom comercial de <strong>Javier Román Sáez</strong>, desenvolupador de l'aplicació. Pots posar-te en contacte a través de <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong>.</p>
+
+<h2>El que aquesta aplicació NO fa</h2>
+<ul>
+  <li>No hi ha registre, compte, usuari ni contrasenya. Mai no se't demana cap correu electrònic, cap telèfon ni cap nom.</li>
+  <li>No hi ha cap eina d'analítica pròpia: ni Google Analytics, ni Firebase, ni informes de fallades. La biblioteca de publicitat de Google sí que envia a Google les seves pròpies dades tècniques; quines dades i per a què, més avall, a «Dades que sí que surten del telèfon».</li>
+  <li>No es venen, no es lloguen ni es cedeixen dades a tercers amb finalitats comercials.</li>
+  <li><strong>Les teves al·lèrgies i el teu diari de símptomes no s'envien enlloc.</strong> Són dades de salut i es queden a l'emmagatzematge privat de l'aplicació. Els nivells de pol·len es calculen dins del telèfon: els servidors als quals es demanen les dades no saben què et provoca al·lèrgia ni com et trobes.</li>
+  <li>No s'utilitza la ubicació precisa. Només es demana l'<strong>aproximada</strong>, i només si tries «Utilitza la meva ubicació». L'aplicació <strong>mai no la demana en segon pla</strong>.</li>
+  <li>No hi ha notificacions enviades des d'un servidor: els avisos es preparen dins del telèfon amb les dades ja baixades.</li>
+</ul>
+
+<h2>Dades que només es queden al teu telèfon</h2>
+<p>Aquesta informació es desa a l'emmagatzematge privat de l'app i no en surt. Desapareix del tot si desinstal·les l'aplicació o n'esborres les dades des de la configuració d'Android.</p>
+<ul>
+  <li><strong>Les teves al·lèrgies</strong>: quins pòl·lens i què més has triat vigilar.</li>
+  <li><strong>Els teus llocs</strong>: les ciutats que deses i «La meva ubicació», amb el seu nom i les seves coordenades.</li>
+  <li><strong>El diari</strong>: com et trobaves cada dia (de 0 a 4), quins símptomes tenies (nas, ulls, pit, gola i orelles, o pell), si et vas prendre la medicació (només sí o no; l'app no pregunta quina), una nota si l'escrius, el nivell que tenia aquell dia cada al·lergen i el nom del lloc.</li>
+  <li>La teva configuració: tema, idioma, avisos i l'hora i el text del recordatori de la medicació.</li>
+  <li>Una <strong>còpia de les últimes previsions</strong> baixades, perquè l'aplicació funcioni sense connexió.</li>
+  <li>Que has acceptat l'avís de la primera arrencada.</li>
+</ul>
+<p>El diari es pot exportar com a fitxer CSV. <strong>Només surt del telèfon si tu el comparteixes</strong>, i va allà on tu triïs.</p>
+
+<h2>Dades que sí que surten del telèfon</h2>
+
+<h3>La previsió del pol·len, la calitja i la qualitat de l'aire</h3>
+<p>Aquestes dades es generen cada dia a partir dels models del Servei de Vigilància Atmosfèrica de Copernicus (CAMS) i es publiquen al nostre web de dades, <code>aire-sin-sustos.pages.dev</code>, allotjat a <strong>Cloudflare</strong>. El web està dividit en quadres de mig grau (uns 50 km de costat), i l'aplicació baixa el del lloc que consultes. <strong>La petició només porta el nom del quadre</strong> (per exemple, «37.0_-4.0»), no les coordenades del lloc. No tenim servidors propis ni conservem registres; Cloudflare rep la teva adreça IP, com qualsevol servidor web, i la tracta segons la seva política.</p>
+
+<h3>La previsió del temps: MET Norway</h3>
+<p>El temps el proporciona l'Institut Meteorològic de Noruega (<strong>MET Norway</strong>). Per demanar-lo, l'aplicació li envia les <strong>coordenades del lloc arrodonides a dos decimals</strong>, al voltant d'un quilòmetre, i un identificador de l'aplicació (el <em>User-Agent</em> que exigeixen les seves condicions). Segons aquestes condicions, MET Norway conserva als seus registres, al seu centre de dades d'Oslo, l'adreça IP i les coordenades de cada petició.</p>
+
+<h3>El nom del lloc i el cercador de ciutats</h3>
+<p>Quan fas servir la teva ubicació, l'aplicació pregunta al mateix Android el nom del lloc que correspon a aquestes coordenades, i el cercador de ciutats envia a Android el text que escrius. A la majoria de telèfons aquest servei (el geocodificador d'Android) el presta <strong>Google</strong>, que el tracta segons la seva política de privadesa.</p>
+
+<h3>Adreça IP</h3>
+<p>Com en qualsevol aplicació que es connecta a internet, els servidors amb els quals es comunica l'app reben la teva adreça IP: Cloudflare (les dades del pol·len i de l'aire), MET Norway (el temps) i Google (el nom dels llocs i la publicitat).</p>
+<p>Google pot fer servir aquesta IP per estimar una <strong>ubicació aproximada</strong>, de l'ordre d'una ciutat o una regió, amb la qual triar i mesurar els anuncis i prevenir fraus.</p>
+
+<h3>Publicitat: Google AdMob</h3>
+<p>L'aplicació inclou l'SDK de publicitat de Google (AdMob) i, per tant, declara el permís <code>com.google.android.gms.permission.AD_ID</code>, que dona accés a l'identificador de publicitat d'Android. Aquest identificador es pot restablir i esborrar des de <em>Configuració d'Android → Google → Anuncis</em>.</p>
+<p>A més de l'identificador de publicitat, l'SDK d'AdMob recull l'identificador del conjunt d'aplicacions (<em>app set ID</em>), les interaccions amb l'aplicació i amb els anuncis (quan s'obre l'app, els tocs i les reproduccions de vídeo) i dades de diagnòstic (temps d'arrencada, bloquejos i consum d'energia). Google els utilitza per servir i mesurar la publicitat, per a estadístiques i per prevenir fraus, segons la seva pròpia política, enllaçada a «Tercers implicats».</p>
+<p>Als països de l'Espai Econòmic Europeu i al Regne Unit, l'aplicació mostra el formulari de consentiment de Google (UMP) abans de servir publicitat personalitzada. Pots canviar la teva elecció quan vulguis des de Configuració → Privadesa dels anuncis.</p>
+<p><strong>Les teves al·lèrgies, els teus llocs i el teu diari mai no arriben a la publicitat.</strong> La petició d'anunci surt sense cap d'aquestes dades. Si rebutges el consentiment, veuràs publicitat no personalitzada i l'aplicació funcionarà exactament igual: no hi ha cap funció bloquejada.</p>
+
+<h2>Tercers implicats</h2>
+<table>
+  <tr><th>Servei</th><th>Per a què</th><th>La seva política</th></tr>
+  <tr>
+    <td>Cloudflare</td>
+    <td>Allotja el web amb les dades del pol·len, la calitja i la qualitat de l'aire</td>
+    <td><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td>
+  </tr>
+  <tr>
+    <td>MET Norway</td>
+    <td>Previsió del temps</td>
+    <td><a href="https://www.met.no/en/About-us/privacy">met.no/en/About-us/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google (geocodificador d'Android)</td>
+    <td>El nom dels llocs i el cercador de ciutats</td>
+    <td><a href="https://policies.google.com/privacy">policies.google.com/privacy</a></td>
+  </tr>
+  <tr>
+    <td>Google AdMob</td>
+    <td>Publicitat i formulari de consentiment</td>
+    <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+</table>
+<p>Les dades del pol·len, la calitja i la qualitat de l'aire contenen informació modificada del Servei de Vigilància Atmosfèrica de Copernicus; ni la Comissió Europea ni l'ECMWF no són responsables de l'ús que se'n pugui fer. La previsió del temps és de MET Norway. Totes dues es publiquen amb llicència <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Aquesta aplicació no està afiliada a Copernicus, a l'ECMWF ni a MET Norway.</p>
+
+<h2>Base jurídica i conservació</h2>
+<p>Les dades de salut que anotes (les teves al·lèrgies i el teu diari) es tracten <strong>únicament al teu dispositiu</strong> i sota el teu control: no hi ha comunicació a tercers i no existeix cap còpia en poder del responsable. La ubicació es fa servir per prestar-te el servei que demanes, la previsió de la teva zona, i només si tries fer-la servir. En el cas de la publicitat personalitzada, la base jurídica és el teu <strong>consentiment</strong>, recollit mitjançant el formulari de Google (UMP) i revocable en qualsevol moment des de la configuració de l'aplicació.</p>
+<p>Tot el que desa l'aplicació roman fins que la desinstal·lis o n'esborris les dades.</p>
+
+<h2>Els teus drets</h2>
+<p>Si resideixes a la Unió Europea, el RGPD et reconeix els drets d'accés, rectificació, supressió, limitació, portabilitat i oposició. A la pràctica, i atès que aquesta aplicació no desa cap dada associada a la teva persona fora del teu telèfon:</p>
+<ul>
+  <li><strong>Supressió:</strong> desinstal·lar l'aplicació, o esborrar-ne les dades des de la configuració d'Android, elimina tot el que desa. També pots esborrar llocs i anotacions del diari des de la mateixa app, i retirar el permís d'ubicació des de la configuració d'Android. L'identificador de publicitat es restableix o s'esborra des de <em>Configuració d'Android → Google → Anuncis</em>.</li>
+  <li><strong>Oposició i retirada del consentiment:</strong> Configuració → Privadesa dels anuncis.</li>
+  <li><strong>Accés i portabilitat:</strong> el diari es pot exportar des de l'app. Pots escriure a l'adreça de contacte, però, com que no existeixen comptes ni identificadors d'usuari, el responsable no té cap dada «teva» per localitzar fora del teu telèfon. Les dades que tracten Google, MET Norway i Cloudflare les gestionen ells, i els drets sobre aquestes dades s'exerceixen davant de cadascun, a les adreces de «Tercers implicats».</li>
+</ul>
+<p>També pots presentar una reclamació davant l'autoritat de control del teu país. A Espanya és l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> (Agència Espanyola de Protecció de Dades).</p>
+
+<h2>Menors</h2>
+<p>Aquesta aplicació no està adreçada a menors de 13 anys i no en recull dades conscientment.</p>
+
+<h2>Canvis en aquesta política</h2>
+<p>Si aquesta política canvia de manera substancial, es publicarà la versió nova en aquesta mateixa adreça amb una data d'actualització diferent. Aquesta pàgina és una traducció; en cas de discrepància, preval la <a href="privacidad-es.html">versió en castellà</a>.</p>
+
+<h2>Advertiment important sobre el servei</h2>
+<p>Aquesta aplicació <strong>no és un producte sanitari</strong>. Informa de nivells ambientals de pol·len, calitja i contaminació; no diagnostica ni tracta cap malaltia i no substitueix el consell del teu metge o del teu al·lergòleg. Els nivells surten de models de previsió i, per a alguns pòl·lens, d'un calendari orientatiu: poden no coincidir amb el que hi ha al teu carrer. Si tens dificultat per respirar, truca al 112.</p>
+
+<footer>
+<p>Aire sin sustos · JR Soft (Javier Román Sáez) · <code>com.jrsoft.alergiasaire</code> · Contacte: <strong><a href="mailto:demual@gmail.com">demual@gmail.com</a></strong></p>
+</footer>
+</body>
+</html>
