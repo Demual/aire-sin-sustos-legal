@@ -35,7 +35,7 @@
 
 <div class="clave">
 <p><strong>In einem Satz:</strong> Diese App hat keine Benutzerkonten, und
-<strong>deine Allergien, deine Orte und dein Tagebuch verlassen dein Handy nicht</strong>.
+<strong>deine Allergien und deine Orte verlassen dein Handy nicht</strong>.
 Um dir die Vorhersage zu liefern, sendet sie nur das Nötigste: das etwa 50 km
 große Gebiet, in dem der Ort liegt, an unsere Daten-Website, und die auf einen
 Kilometer gerundeten Koordinaten des Ortes an den Wetterdienst.</p>
@@ -49,7 +49,7 @@ Kilometer gerundeten Koordinaten des Ortes an den Wetterdienst.</p>
   <li>Es gibt keine Registrierung, kein Konto, keinen Benutzernamen und kein Passwort. Du wirst nie nach einer E-Mail-Adresse, einer Telefonnummer oder einem Namen gefragt.</li>
   <li>Es gibt kein eigenes Analysetool: weder Google Analytics noch Firebase noch Absturzberichte. Die Werbebibliothek von Google sendet allerdings eigene technische Daten an Google; welche Daten und wozu, steht weiter unten unter „Daten, die dein Handy verlassen“.</li>
   <li>Es werden keine Daten zu kommerziellen Zwecken an Dritte verkauft, vermietet oder weitergegeben.</li>
-  <li><strong>Deine Allergien und dein Symptomtagebuch werden nirgendwohin gesendet.</strong> Es sind Gesundheitsdaten, und sie bleiben im privaten Speicher der App. Die Pollenwerte werden auf dem Handy selbst berechnet: Die Server, von denen die Daten abgerufen werden, wissen nicht, worauf du allergisch bist oder wie es dir geht.</li>
+  <li><strong>Deine Allergien werden nirgendwohin gesendet.</strong> Es sind Gesundheitsdaten, und sie bleiben im privaten Speicher der App. Die Pollenwerte werden auf dem Handy selbst berechnet: Die Server, von denen die Daten abgerufen werden, wissen nicht, worauf du allergisch bist.</li>
   <li>Der genaue Standort wird nicht verwendet. Angefordert wird nur der <strong>ungefähre</strong>, und nur, wenn du „Meinen Standort nutzen“ wählst. Die App <strong>fordert ihn nie im Hintergrund an</strong>.</li>
   <li>Es gibt keine Benachrichtigungen, die von einem Server gesendet werden: Die Warnungen werden auf dem Handy selbst aus den bereits heruntergeladenen Daten erstellt.</li>
 </ul>
@@ -59,12 +59,10 @@ Kilometer gerundeten Koordinaten des Ortes an den Wetterdienst.</p>
 <ul>
   <li><strong>Deine Allergien</strong>: welche Pollen und was du sonst noch zum Beobachten ausgewählt hast.</li>
   <li><strong>Deine Orte</strong>: die Städte, die du speicherst, und „Mein Standort“, jeweils mit Namen und Koordinaten.</li>
-  <li><strong>Das Tagebuch</strong>: wie es dir an jedem Tag ging (von 0 bis 4), welche Symptome du hattest (Nase, Augen, Brust, Hals und Ohren oder Haut), ob du deine Medikamente genommen hast (nur Ja oder Nein; die App fragt nicht, welche), eine Notiz, falls du eine schreibst, der Wert jedes Allergens an diesem Tag und der Name des Ortes.</li>
-  <li>Deine Einstellungen: Design, Sprache, Warnungen sowie Uhrzeit und Text der Medikamentenerinnerung.</li>
+  <li>Deine Einstellungen: Design, Sprache und Warnungen.</li>
   <li>Eine <strong>Kopie der zuletzt heruntergeladenen Vorhersagen</strong>, damit die App ohne Internetverbindung funktioniert.</li>
   <li>Dass du den Hinweis beim ersten Start akzeptiert hast.</li>
 </ul>
-<p>Das Tagebuch kann als CSV-Datei exportiert werden. <strong>Es verlässt dein Handy nur, wenn du es teilst</strong>, und geht an ein Ziel deiner Wahl.</p>
 
 <h2>Daten, die dein Handy verlassen</h2>
 
@@ -85,7 +83,7 @@ Kilometer gerundeten Koordinaten des Ortes an den Wetterdienst.</p>
 <p>Die App enthält das Werbe-SDK von Google (AdMob) und deklariert daher die Berechtigung <code>com.google.android.gms.permission.AD_ID</code>, die Zugriff auf die Werbe-ID von Android gewährt. Diese ID lässt sich unter <em>Android-Einstellungen → Google → Anzeigen</em> zurücksetzen und löschen.</p>
 <p>Neben der Werbe-ID erfasst das AdMob-SDK die App-Set-ID, die Interaktionen mit der App und mit den Anzeigen (wann die App geöffnet wird, Antippen und Videowiedergaben) sowie Diagnosedaten (Startzeit, Hänger und Energieverbrauch). Google verwendet sie, um Werbung auszuliefern und zu messen, für Statistiken und zur Betrugsprävention, gemäß seiner eigenen Richtlinie, die unter „Beteiligte Dritte“ verlinkt ist.</p>
 <p>In den Ländern des Europäischen Wirtschaftsraums und im Vereinigten Königreich zeigt die App das Einwilligungsformular von Google (UMP) an, bevor personalisierte Werbung ausgeliefert wird. Du kannst deine Entscheidung jederzeit unter Einstellungen → Datenschutz bei Werbung ändern.</p>
-<p><strong>Deine Allergien, deine Orte und dein Tagebuch fließen nie in die Werbung ein.</strong> Die Anzeigenanfrage wird ohne jegliche dieser Daten gesendet. Wenn du die Einwilligung ablehnst, siehst du nicht personalisierte Werbung, und die App funktioniert genau gleich: Keine Funktion ist gesperrt.</p>
+<p><strong>Deine Allergien und deine Orte fließen nie in die Werbung ein.</strong> Die Anzeigenanfrage wird ohne jegliche dieser Daten gesendet. Wenn du die Einwilligung ablehnst, siehst du nicht personalisierte Werbung, und die App funktioniert genau gleich: Keine Funktion ist gesperrt.</p>
 
 <h2>Beteiligte Dritte</h2>
 <table>
@@ -114,15 +112,15 @@ Kilometer gerundeten Koordinaten des Ortes an den Wetterdienst.</p>
 <p>Die Daten zu Pollen, Saharastaub und Luftqualität enthalten veränderte Informationen des Copernicus-Dienstes zur Überwachung der Atmosphäre; weder die Europäische Kommission noch das ECMWF sind für eine etwaige Verwendung dieser Informationen verantwortlich. Die Wettervorhersage stammt von MET Norway. Beide werden unter der Lizenz <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> veröffentlicht. Diese App ist nicht mit Copernicus, dem ECMWF oder MET Norway verbunden.</p>
 
 <h2>Rechtsgrundlage und Speicherdauer</h2>
-<p>Die Gesundheitsdaten, die du einträgst (deine Allergien und dein Tagebuch), werden <strong>ausschließlich auf deinem Gerät</strong> und unter deiner Kontrolle verarbeitet: Es findet keine Übermittlung an Dritte statt, und beim Verantwortlichen liegt keine Kopie davon vor. Der Standort wird verwendet, um dir den Dienst zu erbringen, den du anforderst, nämlich die Vorhersage für deine Gegend, und nur, wenn du dich für seine Verwendung entscheidest. Bei personalisierter Werbung ist die Rechtsgrundlage deine <strong>Einwilligung</strong>, die über das Formular von Google (UMP) eingeholt wird und jederzeit in den Einstellungen der App widerrufen werden kann.</p>
+<p>Die Gesundheitsdaten, die du auswählst (deine Allergien), werden <strong>ausschließlich auf deinem Gerät</strong> und unter deiner Kontrolle verarbeitet: Es findet keine Übermittlung an Dritte statt, und beim Verantwortlichen liegt keine Kopie davon vor. Der Standort wird verwendet, um dir den Dienst zu erbringen, den du anforderst, nämlich die Vorhersage für deine Gegend, und nur, wenn du dich für seine Verwendung entscheidest. Bei personalisierter Werbung ist die Rechtsgrundlage deine <strong>Einwilligung</strong>, die über das Formular von Google (UMP) eingeholt wird und jederzeit in den Einstellungen der App widerrufen werden kann.</p>
 <p>Alles, was die App speichert, bleibt erhalten, bis du sie deinstallierst oder ihre Daten löschst.</p>
 
 <h2>Deine Rechte</h2>
 <p>Wenn du in der Europäischen Union wohnst, stehen dir nach der DSGVO die Rechte auf Auskunft, Berichtigung, Löschung, Einschränkung der Verarbeitung, Datenübertragbarkeit und Widerspruch zu. Da diese App außerhalb deines Handys keine Daten speichert, die mit deiner Person verknüpft sind, gilt in der Praxis:</p>
 <ul>
-  <li><strong>Löschung:</strong> Wenn du die App deinstallierst oder ihre Daten in den Android-Einstellungen löschst, wird alles entfernt, was sie speichert. Du kannst Orte und Tagebucheinträge auch direkt in der App löschen und die Standortberechtigung in den Android-Einstellungen entziehen. Die Werbe-ID wird unter <em>Android-Einstellungen → Google → Anzeigen</em> zurückgesetzt oder gelöscht.</li>
+  <li><strong>Löschung:</strong> Wenn du die App deinstallierst oder ihre Daten in den Android-Einstellungen löschst, wird alles entfernt, was sie speichert. Du kannst Orte auch direkt in der App löschen, deine Allergien dort ändern und die Standortberechtigung in den Android-Einstellungen entziehen. Die Werbe-ID wird unter <em>Android-Einstellungen → Google → Anzeigen</em> zurückgesetzt oder gelöscht.</li>
   <li><strong>Widerspruch und Widerruf der Einwilligung:</strong> Einstellungen → Datenschutz bei Werbung.</li>
-  <li><strong>Auskunft und Datenübertragbarkeit:</strong> Das Tagebuch kann aus der App exportiert werden. Du kannst an die Kontaktadresse schreiben, aber da es weder Konten noch Benutzerkennungen gibt, hat der Verantwortliche außerhalb deines Handys keine Daten, die er als „deine“ ausfindig machen könnte. Die Daten, die Google, MET Norway und Cloudflare verarbeiten, werden von ihnen selbst verwaltet, und die Rechte daran werden gegenüber jedem von ihnen ausgeübt, über die unter „Beteiligte Dritte“ angegebenen Adressen.</li>
+  <li><strong>Auskunft und Datenübertragbarkeit:</strong> Was die App speichert (deine Allergien, deine Orte und deine Einstellungen), siehst du in der App selbst. Du kannst an die Kontaktadresse schreiben, aber da es weder Konten noch Benutzerkennungen gibt, hat der Verantwortliche außerhalb deines Handys keine Daten, die er als „deine“ ausfindig machen könnte. Die Daten, die Google, MET Norway und Cloudflare verarbeiten, werden von ihnen selbst verwaltet, und die Rechte daran werden gegenüber jedem von ihnen ausgeübt, über die unter „Beteiligte Dritte“ angegebenen Adressen.</li>
 </ul>
 <p>Du kannst außerdem eine Beschwerde bei der Aufsichtsbehörde deines Landes einreichen. In Spanien ist das die <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> (spanische Datenschutzbehörde).</p>
 

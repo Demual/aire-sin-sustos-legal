@@ -35,7 +35,7 @@
 
 <div class="clave">
 <p><strong>En una frase:</strong> esta aplicación no tiene cuentas de usuario y
-<strong>tus alergias, tus lugares y tu diario no salen de tu teléfono</strong>.
+<strong>tus alergias y tus lugares no salen de tu teléfono</strong>.
 Para darte la previsión solo manda lo imprescindible: la zona de unos 50 km
 donde está el lugar, a nuestra web de datos, y sus coordenadas redondeadas a un
 kilómetro, al servicio del tiempo.</p>
@@ -49,7 +49,7 @@ kilómetro, al servicio del tiempo.</p>
   <li>No hay registro, cuenta, usuario ni contraseña. Nunca se te pide un correo, un teléfono ni un nombre.</li>
   <li>No hay ninguna herramienta de analítica propia: ni Google Analytics, ni Firebase, ni informes de fallos. La biblioteca de publicidad de Google sí envía a Google sus propios datos técnicos; qué datos y para qué, más abajo, en «Datos que sí salen del teléfono».</li>
   <li>No se venden, alquilan ni ceden datos a terceros con fines comerciales.</li>
-  <li><strong>Tus alergias y tu diario de síntomas no se envían a ningún sitio.</strong> Son datos de salud y se quedan en el almacenamiento privado de la aplicación. Los niveles de polen se calculan dentro del teléfono: los servidores a los que se piden los datos no saben qué te da alergia ni cómo te encuentras.</li>
+  <li><strong>Tus alergias no se envían a ningún sitio.</strong> Son datos de salud y se quedan en el almacenamiento privado de la aplicación. Los niveles de polen se calculan dentro del teléfono: los servidores a los que se piden los datos no saben qué te da alergia.</li>
   <li>No se usa la ubicación precisa. Solo se pide la <strong>aproximada</strong>, y solo si eliges «Usar mi ubicación». La aplicación <strong>nunca la pide en segundo plano</strong>.</li>
   <li>No hay notificaciones enviadas desde un servidor: los avisos se preparan dentro del teléfono con los datos ya descargados.</li>
 </ul>
@@ -59,12 +59,10 @@ kilómetro, al servicio del tiempo.</p>
 <ul>
   <li><strong>Tus alergias</strong>: qué pólenes y qué más has elegido vigilar.</li>
   <li><strong>Tus lugares</strong>: las ciudades que guardas y «Mi ubicación», con su nombre y sus coordenadas.</li>
-  <li><strong>El diario</strong>: cómo te encontrabas cada día (de 0 a 4), qué síntomas tenías (nariz, ojos, pecho, garganta y oídos, o piel), si tomaste tu medicación (solo sí o no; la app no pregunta cuál), una nota si la escribes, el nivel que tenía ese día cada alérgeno y el nombre del lugar.</li>
-  <li>Tus ajustes: tema, idioma, avisos y la hora y el texto del recordatorio de la medicación.</li>
+  <li>Tus ajustes: tema, idioma y avisos.</li>
   <li>Una <strong>copia de las últimas previsiones</strong> descargadas, para que la aplicación funcione sin conexión.</li>
   <li>Que has aceptado el aviso del primer arranque.</li>
 </ul>
-<p>El diario puede exportarse como un fichero CSV. <strong>Solo sale del teléfono si tú lo compartes</strong>, y va a donde tú elijas.</p>
 
 <h2>Datos que sí salen del teléfono</h2>
 
@@ -85,7 +83,7 @@ kilómetro, al servicio del tiempo.</p>
 <p>La aplicación incluye el SDK de publicidad de Google (AdMob) y, por tanto, declara el permiso <code>com.google.android.gms.permission.AD_ID</code>, que da acceso al identificador de publicidad de Android. Este identificador es reiniciable y borrable desde <em>Ajustes de Android → Google → Anuncios</em>.</p>
 <p>Además del identificador de publicidad, el SDK de AdMob recoge el identificador del conjunto de aplicaciones (<em>app set ID</em>), las interacciones con la aplicación y con los anuncios (cuándo se abre la app, los toques y las reproducciones de vídeo) y datos de diagnóstico (tiempo de arranque, bloqueos y consumo de energía). Google los usa para servir y medir la publicidad, para estadísticas y para prevenir fraudes, según su propia política, enlazada en «Terceros implicados».</p>
 <p>En los países del Espacio Económico Europeo y el Reino Unido, la aplicación muestra el formulario de consentimiento de Google (UMP) antes de servir publicidad personalizada. Puedes cambiar tu elección cuando quieras desde Ajustes → Privacidad de los anuncios.</p>
-<p><strong>Tus alergias, tus lugares y tu diario nunca llegan a la publicidad.</strong> La petición de anuncio sale sin ningún dato de ellos. Si rechazas el consentimiento, verás publicidad no personalizada y la aplicación funcionará exactamente igual: no hay ninguna función bloqueada.</p>
+<p><strong>Tus alergias y tus lugares nunca llegan a la publicidad.</strong> La petición de anuncio sale sin ningún dato de ellos. Si rechazas el consentimiento, verás publicidad no personalizada y la aplicación funcionará exactamente igual: no hay ninguna función bloqueada.</p>
 
 <h2>Terceros implicados</h2>
 <table>
@@ -114,15 +112,15 @@ kilómetro, al servicio del tiempo.</p>
 <p>Los datos del polen, la calima y la calidad del aire contienen información modificada del Servicio de Vigilancia Atmosférica de Copernicus; ni la Comisión Europea ni el ECMWF son responsables del uso que pueda hacerse de ella. La previsión del tiempo es de MET Norway. Ambas se publican con licencia <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Esta aplicación no está afiliada a Copernicus, al ECMWF ni a MET Norway.</p>
 
 <h2>Base legal y conservación</h2>
-<p>Los datos de salud que anotas (tus alergias y tu diario) se tratan <strong>únicamente en tu dispositivo</strong> y bajo tu control: no hay comunicación a terceros y no existe ninguna copia en poder del responsable. La ubicación se usa para prestarte el servicio que pides, la previsión de tu zona, y solo si eliges usarla. En el caso de la publicidad personalizada, la base legal es tu <strong>consentimiento</strong>, recogido mediante el formulario de Google (UMP) y revocable en cualquier momento desde los ajustes de la aplicación.</p>
+<p>Los datos de salud que eliges (tus alergias) se tratan <strong>únicamente en tu dispositivo</strong> y bajo tu control: no hay comunicación a terceros y no existe ninguna copia en poder del responsable. La ubicación se usa para prestarte el servicio que pides, la previsión de tu zona, y solo si eliges usarla. En el caso de la publicidad personalizada, la base legal es tu <strong>consentimiento</strong>, recogido mediante el formulario de Google (UMP) y revocable en cualquier momento desde los ajustes de la aplicación.</p>
 <p>Todo lo que guarda la aplicación permanece hasta que la desinstales o borres sus datos.</p>
 
 <h2>Tus derechos</h2>
 <p>Si resides en la Unión Europea, el RGPD te reconoce los derechos de acceso, rectificación, supresión, limitación, portabilidad y oposición. En la práctica, y dado que esta aplicación no guarda ningún dato asociado a tu persona fuera de tu teléfono:</p>
 <ul>
-  <li><strong>Supresión:</strong> desinstalar la aplicación, o borrar sus datos desde los ajustes de Android, elimina todo lo que guarda. También puedes borrar lugares y anotaciones del diario desde la propia app, y retirar el permiso de ubicación desde los ajustes de Android. El identificador de publicidad se reinicia o se borra desde <em>Ajustes de Android → Google → Anuncios</em>.</li>
+  <li><strong>Supresión:</strong> desinstalar la aplicación, o borrar sus datos desde los ajustes de Android, elimina todo lo que guarda. También puedes borrar lugares y cambiar tus alergias desde la propia app, y retirar el permiso de ubicación desde los ajustes de Android. El identificador de publicidad se reinicia o se borra desde <em>Ajustes de Android → Google → Anuncios</em>.</li>
   <li><strong>Oposición y retirada del consentimiento:</strong> Ajustes → Privacidad de los anuncios.</li>
-  <li><strong>Acceso y portabilidad:</strong> el diario se puede exportar desde la app. Puedes escribir a la dirección de contacto, pero, al no existir cuentas ni identificadores de usuario, el responsable no tiene ningún dato «tuyo» que localizar fuera de tu teléfono. Los datos que tratan Google, MET Norway y Cloudflare los gestionan ellos, y los derechos sobre ellos se ejercen ante cada uno, en las direcciones de «Terceros implicados».</li>
+  <li><strong>Acceso y portabilidad:</strong> lo que guarda la aplicación (tus alergias, tus lugares y tus ajustes) se ve en la propia app. Puedes escribir a la dirección de contacto, pero, al no existir cuentas ni identificadores de usuario, el responsable no tiene ningún dato «tuyo» que localizar fuera de tu teléfono. Los datos que tratan Google, MET Norway y Cloudflare los gestionan ellos, y los derechos sobre ellos se ejercen ante cada uno, en las direcciones de «Terceros implicados».</li>
 </ul>
 <p>También puedes reclamar ante la autoridad de control de tu país. En España es la <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a>.</p>
 

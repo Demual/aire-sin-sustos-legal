@@ -35,7 +35,7 @@
 
 <div class="clave">
 <p><strong>En une phrase :</strong> cette application n'a pas de comptes utilisateur et
-<strong>vos allergies, vos lieux et votre journal ne quittent pas votre téléphone</strong>.
+<strong>vos allergies et vos lieux ne quittent pas votre téléphone</strong>.
 Pour vous fournir les prévisions, elle n'envoie que le strict nécessaire : la zone
 d'environ 50 km où se trouve le lieu, à notre site de données, et ses coordonnées
 arrondies au kilomètre près, au service météo.</p>
@@ -49,7 +49,7 @@ arrondies au kilomètre près, au service météo.</p>
   <li>Il n'y a ni inscription, ni compte, ni nom d'utilisateur, ni mot de passe. On ne vous demande jamais d'adresse e-mail, de numéro de téléphone ni de nom.</li>
   <li>Il n'y a aucun outil d'analyse propre à l'application : ni Google Analytics, ni Firebase, ni rapports de plantage. En revanche, la bibliothèque publicitaire de Google envoie bien à Google ses propres données techniques ; quelles données et dans quel but, c'est expliqué plus bas, dans « Données qui quittent le téléphone ».</li>
   <li>Aucune donnée n'est vendue, louée ou cédée à des tiers à des fins commerciales.</li>
-  <li><strong>Vos allergies et votre journal des symptômes ne sont envoyés nulle part.</strong> Ce sont des données de santé et elles restent dans l'espace de stockage privé de l'application. Les niveaux de pollen sont calculés sur le téléphone : les serveurs auxquels les données sont demandées ne savent pas à quoi vous êtes allergique ni comment vous vous sentez.</li>
+  <li><strong>Vos allergies ne sont envoyées nulle part.</strong> Ce sont des données de santé et elles restent dans l'espace de stockage privé de l'application. Les niveaux de pollen sont calculés sur le téléphone : les serveurs auxquels les données sont demandées ne savent pas à quoi vous êtes allergique.</li>
   <li>La position précise n'est pas utilisée. Seule la position <strong>approximative</strong> est demandée, et uniquement si vous choisissez « Utiliser ma position ». L'application <strong>ne la demande jamais en arrière-plan</strong>.</li>
   <li>Aucune notification n'est envoyée depuis un serveur : les alertes sont préparées sur le téléphone à partir des données déjà téléchargées.</li>
 </ul>
@@ -59,12 +59,10 @@ arrondies au kilomètre près, au service météo.</p>
 <ul>
   <li><strong>Vos allergies</strong> : quels pollens et quels autres éléments vous avez choisi de surveiller.</li>
   <li><strong>Vos lieux</strong> : les villes que vous enregistrez et « Ma position », avec leur nom et leurs coordonnées.</li>
-  <li><strong>Le journal</strong> : comment vous vous sentiez chaque jour (de 0 à 4), quels symptômes vous aviez (nez, yeux, poitrine, gorge et oreilles, ou peau), si vous avez pris vos médicaments (uniquement oui ou non ; l'application ne demande pas lesquels), une note si vous en écrivez une, le niveau de chaque allergène ce jour-là et le nom du lieu.</li>
-  <li>Vos paramètres : thème, langue, alertes, ainsi que l'heure et le texte du rappel de médicaments.</li>
+  <li>Vos paramètres : thème, langue et alertes.</li>
   <li>Une <strong>copie des dernières prévisions</strong> téléchargées, pour que l'application fonctionne hors connexion.</li>
   <li>Le fait que vous ayez accepté l'avertissement affiché au premier lancement.</li>
 </ul>
-<p>Le journal peut être exporté sous forme de fichier CSV. <strong>Il ne quitte votre téléphone que si vous le partagez</strong>, et il va là où vous choisissez de l'envoyer.</p>
 
 <h2>Données qui quittent le téléphone</h2>
 
@@ -85,7 +83,7 @@ arrondies au kilomètre près, au service météo.</p>
 <p>L'application inclut le SDK publicitaire de Google (AdMob) et déclare donc l'autorisation <code>com.google.android.gms.permission.AD_ID</code>, qui donne accès à l'identifiant publicitaire d'Android. Cet identifiant peut être réinitialisé et supprimé depuis <em>Paramètres Android → Google → Annonces</em>.</p>
 <p>En plus de l'identifiant publicitaire, le SDK d'AdMob collecte l'identifiant de groupe d'applications (app set ID), les interactions avec l'application et avec les annonces (quand l'application est ouverte, les appuis et les lectures de vidéos) et des données de diagnostic (temps de lancement, blocages et consommation d'énergie). Google les utilise pour diffuser et mesurer la publicité, à des fins statistiques et pour prévenir la fraude, conformément à sa propre politique, dont le lien figure dans « Tiers concernés ».</p>
 <p>Dans les pays de l'Espace économique européen et au Royaume-Uni, l'application affiche le formulaire de consentement de Google (UMP) avant de diffuser de la publicité personnalisée. Vous pouvez modifier votre choix à tout moment depuis Paramètres → Confidentialité des annonces.</p>
-<p><strong>Vos allergies, vos lieux et votre journal n'arrivent jamais jusqu'à la publicité.</strong> La demande d'annonce est envoyée sans aucune de ces données. Si vous refusez votre consentement, vous verrez de la publicité non personnalisée et l'application fonctionnera exactement de la même façon : aucune fonction n'est bloquée.</p>
+<p><strong>Vos allergies et vos lieux n'arrivent jamais jusqu'à la publicité.</strong> La demande d'annonce est envoyée sans aucune de ces données. Si vous refusez votre consentement, vous verrez de la publicité non personnalisée et l'application fonctionnera exactement de la même façon : aucune fonction n'est bloquée.</p>
 
 <h2>Tiers concernés</h2>
 <table>
@@ -114,15 +112,15 @@ arrondies au kilomètre près, au service météo.</p>
 <p>Les données de pollen, de poussières du Sahara et de qualité de l'air contiennent des informations modifiées du service Copernicus de surveillance de l'atmosphère ; ni la Commission européenne ni l'ECMWF ne sont responsables de l'usage qui pourrait en être fait. Les prévisions météo proviennent de MET Norway. Toutes deux sont publiées sous licence <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cette application n'est affiliée ni à Copernicus, ni à l'ECMWF, ni à MET Norway.</p>
 
 <h2>Base légale et durée de conservation</h2>
-<p>Les données de santé que vous notez (vos allergies et votre journal) sont traitées <strong>uniquement sur votre appareil</strong> et sous votre contrôle : il n'y a aucune communication à des tiers et il n'existe aucune copie en possession du responsable du traitement. La position est utilisée pour vous fournir le service que vous demandez, les prévisions pour votre zone, et uniquement si vous choisissez de l'utiliser. Pour la publicité personnalisée, la base légale est votre <strong>consentement</strong>, recueilli au moyen du formulaire de Google (UMP) et révocable à tout moment depuis les paramètres de l'application.</p>
+<p>Les données de santé que vous choisissez (vos allergies) sont traitées <strong>uniquement sur votre appareil</strong> et sous votre contrôle : il n'y a aucune communication à des tiers et il n'existe aucune copie en possession du responsable du traitement. La position est utilisée pour vous fournir le service que vous demandez, les prévisions pour votre zone, et uniquement si vous choisissez de l'utiliser. Pour la publicité personnalisée, la base légale est votre <strong>consentement</strong>, recueilli au moyen du formulaire de Google (UMP) et révocable à tout moment depuis les paramètres de l'application.</p>
 <p>Tout ce que l'application enregistre est conservé jusqu'à ce que vous la désinstalliez ou que vous effaciez ses données.</p>
 
 <h2>Vos droits</h2>
 <p>Si vous résidez dans l'Union européenne, le RGPD vous reconnaît les droits d'accès, de rectification, d'effacement, de limitation du traitement, de portabilité et d'opposition. En pratique, et puisque cette application ne conserve aucune donnée associée à votre personne en dehors de votre téléphone :</p>
 <ul>
-  <li><strong>Effacement :</strong> désinstaller l'application, ou effacer ses données depuis les paramètres d'Android, supprime tout ce qu'elle conserve. Vous pouvez aussi supprimer des lieux et des entrées du journal depuis l'application elle-même, et retirer l'autorisation d'accès à la position depuis les paramètres d'Android. L'identifiant publicitaire se réinitialise ou se supprime depuis <em>Paramètres Android → Google → Annonces</em>.</li>
+  <li><strong>Effacement :</strong> désinstaller l'application, ou effacer ses données depuis les paramètres d'Android, supprime tout ce qu'elle conserve. Vous pouvez aussi supprimer des lieux et modifier vos allergies depuis l'application elle-même, et retirer l'autorisation d'accès à la position depuis les paramètres d'Android. L'identifiant publicitaire se réinitialise ou se supprime depuis <em>Paramètres Android → Google → Annonces</em>.</li>
   <li><strong>Opposition et retrait du consentement :</strong> Paramètres → Confidentialité des annonces.</li>
-  <li><strong>Accès et portabilité :</strong> le journal peut être exporté depuis l'application. Vous pouvez écrire à l'adresse de contact, mais, comme il n'existe ni comptes ni identifiants d'utilisateur, le responsable du traitement n'a aucune donnée « vous concernant » à retrouver en dehors de votre téléphone. Les données traitées par Google, MET Norway et Cloudflare sont gérées par eux, et les droits sur ces données s'exercent auprès de chacun d'eux, aux adresses indiquées dans « Tiers concernés ».</li>
+  <li><strong>Accès et portabilité :</strong> ce que l'application conserve (vos allergies, vos lieux et vos paramètres) est visible dans l'application elle-même. Vous pouvez écrire à l'adresse de contact, mais, comme il n'existe ni comptes ni identifiants d'utilisateur, le responsable du traitement n'a aucune donnée « vous concernant » à retrouver en dehors de votre téléphone. Les données traitées par Google, MET Norway et Cloudflare sont gérées par eux, et les droits sur ces données s'exercent auprès de chacun d'eux, aux adresses indiquées dans « Tiers concernés ».</li>
 </ul>
 <p>Vous pouvez également introduire une réclamation auprès de l'autorité de contrôle de votre pays. En Espagne, il s'agit de l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> (Agence espagnole de protection des données).</p>
 

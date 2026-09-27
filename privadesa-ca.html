@@ -35,7 +35,7 @@
 
 <div class="clave">
 <p><strong>En una frase:</strong> aquesta aplicació no té comptes d'usuari i
-<strong>les teves al·lèrgies, els teus llocs i el teu diari no surten del teu telèfon</strong>.
+<strong>les teves al·lèrgies i els teus llocs no surten del teu telèfon</strong>.
 Per donar-te la previsió només envia l'imprescindible: la zona d'uns 50 km
 on es troba el lloc, al nostre web de dades, i les seves coordenades arrodonides
 a un quilòmetre, al servei meteorològic.</p>
@@ -49,7 +49,7 @@ a un quilòmetre, al servei meteorològic.</p>
   <li>No hi ha registre, compte, usuari ni contrasenya. Mai no se't demana cap correu electrònic, cap telèfon ni cap nom.</li>
   <li>No hi ha cap eina d'analítica pròpia: ni Google Analytics, ni Firebase, ni informes de fallades. La biblioteca de publicitat de Google sí que envia a Google les seves pròpies dades tècniques; quines dades i per a què, més avall, a «Dades que sí que surten del telèfon».</li>
   <li>No es venen, no es lloguen ni es cedeixen dades a tercers amb finalitats comercials.</li>
-  <li><strong>Les teves al·lèrgies i el teu diari de símptomes no s'envien enlloc.</strong> Són dades de salut i es queden a l'emmagatzematge privat de l'aplicació. Els nivells de pol·len es calculen dins del telèfon: els servidors als quals es demanen les dades no saben què et provoca al·lèrgia ni com et trobes.</li>
+  <li><strong>Les teves al·lèrgies no s'envien enlloc.</strong> Són dades de salut i es queden a l'emmagatzematge privat de l'aplicació. Els nivells de pol·len es calculen dins del telèfon: els servidors als quals es demanen les dades no saben què et provoca al·lèrgia.</li>
   <li>No s'utilitza la ubicació precisa. Només es demana l'<strong>aproximada</strong>, i només si tries «Utilitza la meva ubicació». L'aplicació <strong>mai no la demana en segon pla</strong>.</li>
   <li>No hi ha notificacions enviades des d'un servidor: els avisos es preparen dins del telèfon amb les dades ja baixades.</li>
 </ul>
@@ -59,12 +59,10 @@ a un quilòmetre, al servei meteorològic.</p>
 <ul>
   <li><strong>Les teves al·lèrgies</strong>: quins pòl·lens i què més has triat vigilar.</li>
   <li><strong>Els teus llocs</strong>: les ciutats que deses i «La meva ubicació», amb el seu nom i les seves coordenades.</li>
-  <li><strong>El diari</strong>: com et trobaves cada dia (de 0 a 4), quins símptomes tenies (nas, ulls, pit, gola i orelles, o pell), si et vas prendre la medicació (només sí o no; l'app no pregunta quina), una nota si l'escrius, el nivell que tenia aquell dia cada al·lergen i el nom del lloc.</li>
-  <li>La teva configuració: tema, idioma, avisos i l'hora i el text del recordatori de la medicació.</li>
+  <li>La teva configuració: tema, idioma i avisos.</li>
   <li>Una <strong>còpia de les últimes previsions</strong> baixades, perquè l'aplicació funcioni sense connexió.</li>
   <li>Que has acceptat l'avís de la primera arrencada.</li>
 </ul>
-<p>El diari es pot exportar com a fitxer CSV. <strong>Només surt del telèfon si tu el comparteixes</strong>, i va allà on tu triïs.</p>
 
 <h2>Dades que sí que surten del telèfon</h2>
 
@@ -85,7 +83,7 @@ a un quilòmetre, al servei meteorològic.</p>
 <p>L'aplicació inclou l'SDK de publicitat de Google (AdMob) i, per tant, declara el permís <code>com.google.android.gms.permission.AD_ID</code>, que dona accés a l'identificador de publicitat d'Android. Aquest identificador es pot restablir i esborrar des de <em>Configuració d'Android → Google → Anuncis</em>.</p>
 <p>A més de l'identificador de publicitat, l'SDK d'AdMob recull l'identificador del conjunt d'aplicacions (<em>app set ID</em>), les interaccions amb l'aplicació i amb els anuncis (quan s'obre l'app, els tocs i les reproduccions de vídeo) i dades de diagnòstic (temps d'arrencada, bloquejos i consum d'energia). Google els utilitza per servir i mesurar la publicitat, per a estadístiques i per prevenir fraus, segons la seva pròpia política, enllaçada a «Tercers implicats».</p>
 <p>Als països de l'Espai Econòmic Europeu i al Regne Unit, l'aplicació mostra el formulari de consentiment de Google (UMP) abans de servir publicitat personalitzada. Pots canviar la teva elecció quan vulguis des de Configuració → Privadesa dels anuncis.</p>
-<p><strong>Les teves al·lèrgies, els teus llocs i el teu diari mai no arriben a la publicitat.</strong> La petició d'anunci surt sense cap d'aquestes dades. Si rebutges el consentiment, veuràs publicitat no personalitzada i l'aplicació funcionarà exactament igual: no hi ha cap funció bloquejada.</p>
+<p><strong>Les teves al·lèrgies i els teus llocs mai no arriben a la publicitat.</strong> La petició d'anunci surt sense cap d'aquestes dades. Si rebutges el consentiment, veuràs publicitat no personalitzada i l'aplicació funcionarà exactament igual: no hi ha cap funció bloquejada.</p>
 
 <h2>Tercers implicats</h2>
 <table>
@@ -114,15 +112,15 @@ a un quilòmetre, al servei meteorològic.</p>
 <p>Les dades del pol·len, la calitja i la qualitat de l'aire contenen informació modificada del Servei de Vigilància Atmosfèrica de Copernicus; ni la Comissió Europea ni l'ECMWF no són responsables de l'ús que se'n pugui fer. La previsió del temps és de MET Norway. Totes dues es publiquen amb llicència <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Aquesta aplicació no està afiliada a Copernicus, a l'ECMWF ni a MET Norway.</p>
 
 <h2>Base jurídica i conservació</h2>
-<p>Les dades de salut que anotes (les teves al·lèrgies i el teu diari) es tracten <strong>únicament al teu dispositiu</strong> i sota el teu control: no hi ha comunicació a tercers i no existeix cap còpia en poder del responsable. La ubicació es fa servir per prestar-te el servei que demanes, la previsió de la teva zona, i només si tries fer-la servir. En el cas de la publicitat personalitzada, la base jurídica és el teu <strong>consentiment</strong>, recollit mitjançant el formulari de Google (UMP) i revocable en qualsevol moment des de la configuració de l'aplicació.</p>
+<p>Les dades de salut que tries (les teves al·lèrgies) es tracten <strong>únicament al teu dispositiu</strong> i sota el teu control: no hi ha comunicació a tercers i no existeix cap còpia en poder del responsable. La ubicació es fa servir per prestar-te el servei que demanes, la previsió de la teva zona, i només si tries fer-la servir. En el cas de la publicitat personalitzada, la base jurídica és el teu <strong>consentiment</strong>, recollit mitjançant el formulari de Google (UMP) i revocable en qualsevol moment des de la configuració de l'aplicació.</p>
 <p>Tot el que desa l'aplicació roman fins que la desinstal·lis o n'esborris les dades.</p>
 
 <h2>Els teus drets</h2>
 <p>Si resideixes a la Unió Europea, el RGPD et reconeix els drets d'accés, rectificació, supressió, limitació, portabilitat i oposició. A la pràctica, i atès que aquesta aplicació no desa cap dada associada a la teva persona fora del teu telèfon:</p>
 <ul>
-  <li><strong>Supressió:</strong> desinstal·lar l'aplicació, o esborrar-ne les dades des de la configuració d'Android, elimina tot el que desa. També pots esborrar llocs i anotacions del diari des de la mateixa app, i retirar el permís d'ubicació des de la configuració d'Android. L'identificador de publicitat es restableix o s'esborra des de <em>Configuració d'Android → Google → Anuncis</em>.</li>
+  <li><strong>Supressió:</strong> desinstal·lar l'aplicació, o esborrar-ne les dades des de la configuració d'Android, elimina tot el que desa. També pots esborrar llocs i canviar les teves al·lèrgies des de la mateixa app, i retirar el permís d'ubicació des de la configuració d'Android. L'identificador de publicitat es restableix o s'esborra des de <em>Configuració d'Android → Google → Anuncis</em>.</li>
   <li><strong>Oposició i retirada del consentiment:</strong> Configuració → Privadesa dels anuncis.</li>
-  <li><strong>Accés i portabilitat:</strong> el diari es pot exportar des de l'app. Pots escriure a l'adreça de contacte, però, com que no existeixen comptes ni identificadors d'usuari, el responsable no té cap dada «teva» per localitzar fora del teu telèfon. Les dades que tracten Google, MET Norway i Cloudflare les gestionen ells, i els drets sobre aquestes dades s'exerceixen davant de cadascun, a les adreces de «Tercers implicats».</li>
+  <li><strong>Accés i portabilitat:</strong> el que desa l'aplicació (les teves al·lèrgies, els teus llocs i la configuració) es veu a la mateixa app. Pots escriure a l'adreça de contacte, però, com que no existeixen comptes ni identificadors d'usuari, el responsable no té cap dada «teva» per localitzar fora del teu telèfon. Les dades que tracten Google, MET Norway i Cloudflare les gestionen ells, i els drets sobre aquestes dades s'exerceixen davant de cadascun, a les adreces de «Tercers implicats».</li>
 </ul>
 <p>També pots presentar una reclamació davant l'autoritat de control del teu país. A Espanya és l'<a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> (Agència Espanyola de Protecció de Dades).</p>
 

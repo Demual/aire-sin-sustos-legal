@@ -35,7 +35,7 @@
 
 <div class="clave">
 <p><strong>Numa frase:</strong> esta aplicação não tem contas de utilizador e
-<strong>as suas alergias, os seus locais e o seu diário não saem do telemóvel</strong>.
+<strong>as suas alergias e os seus locais não saem do telemóvel</strong>.
 Para lhe dar a previsão, envia apenas o imprescindível: a zona de cerca de 50 km
 onde se encontra o local, ao nosso site de dados, e as respetivas coordenadas
 arredondadas a um quilómetro, ao serviço meteorológico.</p>
@@ -49,7 +49,7 @@ arredondadas a um quilómetro, ao serviço meteorológico.</p>
   <li>Não há registo, conta, utilizador nem palavra-passe. Nunca lhe é pedido um endereço de e-mail, um número de telefone nem um nome.</li>
   <li>Não existe nenhuma ferramenta de análise própria: nem Google Analytics, nem Firebase, nem relatórios de falhas. A biblioteca de publicidade da Google, essa sim, envia à Google dados técnicos próprios; que dados e para quê, explica-se mais abaixo, em «Dados que saem do telemóvel».</li>
   <li>Não são vendidos, alugados nem cedidos dados a terceiros para fins comerciais.</li>
-  <li><strong>As suas alergias e o seu diário de sintomas não são enviados para lado nenhum.</strong> São dados de saúde e ficam no armazenamento privado da aplicação. Os níveis de pólen são calculados no próprio telemóvel: os servidores aos quais os dados são pedidos não sabem a que tem alergia nem como se sente.</li>
+  <li><strong>As suas alergias não são enviadas para lado nenhum.</strong> São dados de saúde e ficam no armazenamento privado da aplicação. Os níveis de pólen são calculados no próprio telemóvel: os servidores aos quais os dados são pedidos não sabem a que tem alergia.</li>
   <li>Não é utilizada a localização precisa. Só é pedida a <strong>aproximada</strong>, e apenas se escolher «Usar a minha localização». A aplicação <strong>nunca a pede em segundo plano</strong>.</li>
   <li>Não há notificações enviadas a partir de um servidor: os alertas são preparados no próprio telemóvel com os dados já descarregados.</li>
 </ul>
@@ -59,12 +59,10 @@ arredondadas a um quilómetro, ao serviço meteorológico.</p>
 <ul>
   <li><strong>As suas alergias</strong>: que pólenes e o que mais escolheu acompanhar.</li>
   <li><strong>Os seus locais</strong>: as cidades que guarda e «A minha localização», com o respetivo nome e as respetivas coordenadas.</li>
-  <li><strong>O diário</strong>: como se sentia em cada dia (de 0 a 4), que sintomas tinha (nariz, olhos, peito, garganta e ouvidos, ou pele), se tomou a medicação (apenas sim ou não; a aplicação não pergunta qual), uma nota, se a escrever, o nível de cada alergénio nesse dia e o nome do local.</li>
-  <li>As suas definições: tema, idioma, alertas e a hora e o texto do lembrete da medicação.</li>
+  <li>As suas definições: tema, idioma e alertas.</li>
   <li>Uma <strong>cópia das últimas previsões</strong> descarregadas, para que a aplicação funcione sem ligação à Internet.</li>
   <li>O facto de ter aceitado o aviso do primeiro arranque.</li>
 </ul>
-<p>O diário pode ser exportado como um ficheiro CSV. <strong>Só sai do telemóvel se o partilhar</strong>, e vai para onde escolher.</p>
 
 <h2>Dados que saem do telemóvel</h2>
 
@@ -85,7 +83,7 @@ arredondadas a um quilómetro, ao serviço meteorológico.</p>
 <p>A aplicação inclui o SDK de publicidade da Google (AdMob) e, por isso, declara a autorização <code>com.google.android.gms.permission.AD_ID</code>, que dá acesso ao ID de publicidade do Android. Este ID pode ser reposto e eliminado em <em>Definições do Android → Google → Anúncios</em>.</p>
 <p>Além do ID de publicidade, o SDK do AdMob recolhe o ID do conjunto de aplicações (app set ID), as interações com a aplicação e com os anúncios (quando a aplicação é aberta, os toques e as reproduções de vídeo) e dados de diagnóstico (tempo de arranque, bloqueios e consumo de energia). A Google utiliza-os para apresentar e medir a publicidade, para estatísticas e para prevenir fraudes, de acordo com a sua própria política, cuja ligação se encontra em «Terceiros envolvidos».</p>
 <p>Nos países do Espaço Económico Europeu e no Reino Unido, a aplicação mostra o formulário de consentimento da Google (UMP) antes de apresentar publicidade personalizada. Pode alterar a sua escolha a qualquer momento em Definições → Privacidade dos anúncios.</p>
-<p><strong>As suas alergias, os seus locais e o seu diário nunca chegam à publicidade.</strong> O pedido de anúncio é enviado sem nenhum desses dados. Se recusar o consentimento, verá publicidade não personalizada e a aplicação funcionará exatamente da mesma forma: não há nenhuma função bloqueada.</p>
+<p><strong>As suas alergias e os seus locais nunca chegam à publicidade.</strong> O pedido de anúncio é enviado sem nenhum desses dados. Se recusar o consentimento, verá publicidade não personalizada e a aplicação funcionará exatamente da mesma forma: não há nenhuma função bloqueada.</p>
 
 <h2>Terceiros envolvidos</h2>
 <table>
@@ -114,15 +112,15 @@ arredondadas a um quilómetro, ao serviço meteorológico.</p>
 <p>Os dados do pólen, das poeiras do Sara e da qualidade do ar contêm informação modificada do Serviço de Monitorização da Atmosfera do Copernicus; nem a Comissão Europeia nem o ECMWF são responsáveis pela utilização que dela possa ser feita. A previsão do tempo é do MET Norway. Ambas são publicadas com a licença <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Esta aplicação não está afiliada ao Copernicus, ao ECMWF nem ao MET Norway.</p>
 
 <h2>Fundamento jurídico e conservação</h2>
-<p>Os dados de saúde que anota (as suas alergias e o seu diário) são tratados <strong>unicamente no seu dispositivo</strong> e sob o seu controlo: não há comunicação a terceiros e não existe nenhuma cópia em poder do responsável pelo tratamento. A localização é utilizada para lhe prestar o serviço que pede, a previsão da sua zona, e apenas se optar por utilizá-la. No caso da publicidade personalizada, o fundamento jurídico é o seu <strong>consentimento</strong>, recolhido através do formulário da Google (UMP) e revogável a qualquer momento nas definições da aplicação.</p>
+<p>Os dados de saúde que escolhe (as suas alergias) são tratados <strong>unicamente no seu dispositivo</strong> e sob o seu controlo: não há comunicação a terceiros e não existe nenhuma cópia em poder do responsável pelo tratamento. A localização é utilizada para lhe prestar o serviço que pede, a previsão da sua zona, e apenas se optar por utilizá-la. No caso da publicidade personalizada, o fundamento jurídico é o seu <strong>consentimento</strong>, recolhido através do formulário da Google (UMP) e revogável a qualquer momento nas definições da aplicação.</p>
 <p>Tudo o que a aplicação guarda permanece até que a desinstale ou apague os respetivos dados.</p>
 
 <h2>Os seus direitos</h2>
 <p>Se residir na União Europeia, o RGPD reconhece-lhe os direitos de acesso, retificação, apagamento, limitação do tratamento, portabilidade e oposição. Na prática, e dado que esta aplicação não guarda nenhum dado associado à sua pessoa fora do telemóvel:</p>
 <ul>
-  <li><strong>Apagamento:</strong> desinstalar a aplicação, ou apagar os respetivos dados nas definições do Android, elimina tudo o que esta guarda. Também pode apagar locais e anotações do diário na própria aplicação, e retirar a autorização de localização nas definições do Android. O ID de publicidade é reposto ou eliminado em <em>Definições do Android → Google → Anúncios</em>.</li>
+  <li><strong>Apagamento:</strong> desinstalar a aplicação, ou apagar os respetivos dados nas definições do Android, elimina tudo o que esta guarda. Também pode apagar locais e alterar as suas alergias na própria aplicação, e retirar a autorização de localização nas definições do Android. O ID de publicidade é reposto ou eliminado em <em>Definições do Android → Google → Anúncios</em>.</li>
   <li><strong>Oposição e retirada do consentimento:</strong> Definições → Privacidade dos anúncios.</li>
-  <li><strong>Acesso e portabilidade:</strong> o diário pode ser exportado a partir da aplicação. Pode escrever para o endereço de contacto, mas, como não existem contas nem identificadores de utilizador, o responsável pelo tratamento não tem nenhum dado «seu» para localizar fora do telemóvel. Os dados tratados pela Google, pelo MET Norway e pela Cloudflare são geridos por estas entidades, e os direitos sobre eles exercem-se junto de cada uma, nos endereços indicados em «Terceiros envolvidos».</li>
+  <li><strong>Acesso e portabilidade:</strong> o que a aplicação guarda (as suas alergias, os seus locais e as suas definições) vê-se na própria aplicação. Pode escrever para o endereço de contacto, mas, como não existem contas nem identificadores de utilizador, o responsável pelo tratamento não tem nenhum dado «seu» para localizar fora do telemóvel. Os dados tratados pela Google, pelo MET Norway e pela Cloudflare são geridos por estas entidades, e os direitos sobre eles exercem-se junto de cada uma, nos endereços indicados em «Terceiros envolvidos».</li>
 </ul>
 <p>Pode também apresentar reclamação à autoridade de controlo do seu país. Em Espanha, é a <a href="https://www.aepd.es">Agencia Española de Protección de Datos</a> (Agência Espanhola de Proteção de Dados).</p>
 
