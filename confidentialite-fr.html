@@ -31,7 +31,7 @@
 <body>
 
 <h1>Politique de confidentialité</h1>
-<p class="fecha">Application <strong>Aire sin sustos</strong> (<code>com.jrsoft.alergiasaire</code>) · Dernière mise à jour : 27 septembre 2026</p>
+<p class="fecha">Application <strong>Aire sin sustos</strong> (<code>com.jrsoft.alergiasaire</code>) · Dernière mise à jour : 1er octobre 2026</p>
 
 <div class="clave">
 <p><strong>En une phrase :</strong> cette application n'a pas de comptes utilisateur et
@@ -47,7 +47,7 @@ arrondies au kilomètre près, au service météo.</p>
 <h2>Ce que cette application ne fait PAS</h2>
 <ul>
   <li>Il n'y a ni inscription, ni compte, ni nom d'utilisateur, ni mot de passe. On ne vous demande jamais d'adresse e-mail, de numéro de téléphone ni de nom.</li>
-  <li>Il n'y a aucun outil d'analyse propre à l'application : ni Google Analytics, ni Firebase, ni rapports de plantage. En revanche, la bibliothèque publicitaire de Google envoie bien à Google ses propres données techniques ; quelles données et dans quel but, c'est expliqué plus bas, dans « Données qui quittent le téléphone ».</li>
+  <li>Il n'y a aucun outil d'analyse propre à l'application : ni Google Analytics, ni Firebase Analytics, ni rapports de plantage. En revanche, la bibliothèque publicitaire de Google envoie bien à Google ses propres données techniques ; quelles données et dans quel but, c'est expliqué plus bas, dans « Données qui quittent le téléphone ».</li>
   <li>Aucune donnée n'est vendue, louée ou cédée à des tiers à des fins commerciales.</li>
   <li><strong>Vos allergies ne sont envoyées nulle part.</strong> Ce sont des données de santé et elles restent dans l'espace de stockage privé de l'application. Les niveaux de pollen sont calculés sur le téléphone : les serveurs auxquels les données sont demandées ne savent pas à quoi vous êtes allergique.</li>
   <li>La position précise n'est pas utilisée. Seule la position <strong>approximative</strong> est demandée, et uniquement si vous choisissez « Utiliser ma position ». L'application <strong>ne la demande jamais en arrière-plan</strong>.</li>
@@ -76,7 +76,7 @@ arrondies au kilomètre près, au service météo.</p>
 <p>Lorsque vous utilisez votre position, l'application demande à Android lui-même le nom du lieu qui correspond à ces coordonnées, et la recherche de villes envoie à Android le texte que vous saisissez. Sur la plupart des téléphones, ce service (le géocodeur d'Android) est fourni par <strong>Google</strong>, qui traite ces informations conformément à sa politique de confidentialité.</p>
 
 <h3>Adresse IP</h3>
-<p>Comme pour toute application qui se connecte à Internet, les serveurs avec lesquels l'application communique reçoivent votre adresse IP : Cloudflare (les données sur le pollen et l'air), MET Norway (la météo) et Google (le nom des lieux et la publicité).</p>
+<p>Comme pour toute application qui se connecte à Internet, les serveurs avec lesquels l'application communique reçoivent votre adresse IP : Cloudflare (les données sur le pollen et l'air), MET Norway (la météo) et Google (le nom des lieux, la publicité et, si elle est activée, la configuration à distance).</p>
 <p>Google peut utiliser cette adresse IP pour estimer une <strong>position approximative</strong>, de l'ordre d'une ville ou d'une région, qui lui sert à choisir et à mesurer les annonces et à prévenir la fraude.</p>
 
 <h3>Publicité : Google AdMob</h3>
@@ -107,6 +107,11 @@ arrondies au kilomètre près, au service météo.</p>
     <td>Google AdMob</td>
     <td>Publicité et formulaire de consentement</td>
     <td><a href="https://policies.google.com/technologies/ads">policies.google.com/technologies/ads</a></td>
+  </tr>
+  <tr>
+    <td>Google Firebase Remote Config</td>
+    <td>Ajuster les emplacements publicitaires sans publier de nouvelle version (facultatif)</td>
+    <td><a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a></td>
   </tr>
 </table>
 <p>Les données de pollen, de poussières du Sahara et de qualité de l'air contiennent des informations modifiées du service Copernicus de surveillance de l'atmosphère ; ni la Commission européenne ni l'ECMWF ne sont responsables de l'usage qui pourrait en être fait. Les prévisions météo proviennent de MET Norway. Toutes deux sont publiées sous licence <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a>. Cette application n'est affiliée ni à Copernicus, ni à l'ECMWF, ni à MET Norway.</p>
