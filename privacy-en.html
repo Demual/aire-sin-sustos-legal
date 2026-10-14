@@ -36,9 +36,9 @@
 <div class="clave">
 <p><strong>In one sentence:</strong> this app has no user accounts and
 <strong>your allergies and your places never leave your phone</strong>.
-To give you the forecast it only sends what is essential: the area of about
-50 km the place is in, to our data website, and its coordinates rounded to one
-kilometre, to the weather service.</p>
+To give you the forecast it only sends our data website what is essential: the
+area of about 50 km the place is in and, for the weather, its coordinates
+rounded to one kilometre.</p>
 </div>
 
 <h2>Who is responsible</h2>
@@ -74,13 +74,13 @@ kilometre, to the weather service.</p>
 <p>This data is generated every day from the models of the Copernicus Atmosphere Monitoring Service (CAMS) and published on our data website, <code>aire-sin-sustos.pages.dev</code>, hosted by <strong>Cloudflare</strong>. The website is split into half-degree squares (about 50 km across), and the app downloads the one for the place you are looking at. <strong>The request only carries the name of the square</strong> (for example, “37.0_-4.0”), not the coordinates of the place. We have no servers of our own and keep no logs; Cloudflare receives your IP address, like any web server, and handles it under its own policy.</p>
 
 <h3>The weather forecast: MET Norway</h3>
-<p>The weather comes from the Norwegian Meteorological Institute (<strong>MET Norway</strong>). To request it, the app sends it the <strong>coordinates of the place rounded to two decimal places</strong>, about one kilometre, and an app identifier (the <em>User-Agent</em> its terms require). According to those terms, MET Norway stores the IP address and the coordinates of each request in its logs, in its data centre in Oslo.</p>
+<p>The weather comes from the Norwegian Meteorological Institute (<strong>MET Norway</strong>), but the app does not ask it directly: since version 1.0.3 it asks our data website, on Cloudflare, sending the <strong>coordinates of the place rounded to two decimal places</strong>, about one kilometre. The website asks MET Norway on its behalf, identifying itself as Aire sin sustos, and keeps the forecast for each point until it expires, to give it to everyone who asks for it. So <strong>MET Norway receives no requests from your phone</strong>: it gets the coordinates, but not your IP address or anything else about you. We keep no logs of who asks; Cloudflare receives your IP address, as with the pollen data. Versions before 1.0.3 asked MET Norway directly, which, according to its terms, stores the IP address and the coordinates of each request in its logs, in its data centre in Oslo.</p>
 
 <h3>Place names and the city search</h3>
 <p>When you use your location, the app asks Android itself for the name of the place at those coordinates, and the city search sends Android the text you type. On most phones that service (Android's geocoder) is provided by <strong>Google</strong>, which handles it under its privacy policy.</p>
 
 <h3>IP address</h3>
-<p>As with any app that connects to the internet, the servers the app talks to receive your IP address: Cloudflare (pollen and air data), MET Norway (weather) and Google (place names, advertising and, if configured, remote configuration).</p>
+<p>As with any app that connects to the internet, the servers the app talks to receive your IP address: Cloudflare (pollen, air and weather data) and Google (place names, advertising and, if configured, remote configuration).</p>
 <p>Google may use that IP address to estimate an <strong>approximate location</strong>, at the level of a city or region, to choose and measure ads and to prevent fraud.</p>
 
 <h3>Advertising: Google AdMob</h3>
@@ -94,12 +94,12 @@ kilometre, to the weather service.</p>
   <tr><th>Service</th><th>What for</th><th>Their policy</th></tr>
   <tr>
     <td>Cloudflare</td>
-    <td>Hosts the website with the pollen, dust and air quality data</td>
+    <td>Hosts the website with the pollen, dust and air quality data, and the server that requests the weather from MET Norway</td>
     <td><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td>
   </tr>
   <tr>
     <td>MET Norway</td>
-    <td>Weather forecast</td>
+    <td>Weather forecast, through our website</td>
     <td><a href="https://www.met.no/en/About-us/privacy">met.no/en/About-us/privacy</a></td>
   </tr>
   <tr>

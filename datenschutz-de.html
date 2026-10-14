@@ -36,9 +36,9 @@
 <div class="clave">
 <p><strong>In einem Satz:</strong> Diese App hat keine Benutzerkonten, und
 <strong>deine Allergien und deine Orte verlassen dein Handy nicht</strong>.
-Um dir die Vorhersage zu liefern, sendet sie nur das Nötigste: das etwa 50 km
-große Gebiet, in dem der Ort liegt, an unsere Daten-Website, und die auf einen
-Kilometer gerundeten Koordinaten des Ortes an den Wetterdienst.</p>
+Um dir die Vorhersage zu liefern, sendet sie nur das Nötigste an unsere
+Daten-Website: das etwa 50 km große Gebiet, in dem der Ort liegt, und für das
+Wetter die auf einen Kilometer gerundeten Koordinaten des Ortes.</p>
 </div>
 
 <h2>Wer verantwortlich ist</h2>
@@ -74,13 +74,13 @@ Kilometer gerundeten Koordinaten des Ortes an den Wetterdienst.</p>
 <p>Diese Daten werden jeden Tag aus den Modellen des Copernicus-Dienstes zur Überwachung der Atmosphäre (CAMS) erzeugt und auf unserer Daten-Website <code>aire-sin-sustos.pages.dev</code> veröffentlicht, die bei <strong>Cloudflare</strong> gehostet wird. Die Website ist in Quadrate von einem halben Grad (etwa 50 km Seitenlänge) aufgeteilt, und die App lädt das Quadrat des Ortes herunter, den du dir ansiehst. <strong>Die Anfrage enthält nur den Namen des Quadrats</strong> (zum Beispiel „37.0_-4.0“), nicht die Koordinaten des Ortes. Wir haben keine eigenen Server und speichern keine Protokolle; Cloudflare erhält wie jeder Webserver deine IP-Adresse und verarbeitet sie gemäß seiner Datenschutzerklärung.</p>
 
 <h3>Die Wettervorhersage: MET Norway</h3>
-<p>Die Wetterdaten liefert das Norwegische Meteorologische Institut (<strong>MET Norway</strong>). Um sie abzurufen, sendet die App an MET Norway die <strong>auf zwei Dezimalstellen gerundeten Koordinaten des Ortes</strong>, also auf etwa einen Kilometer genau, und eine Kennung der App (den <em>User-Agent</em>, den seine Nutzungsbedingungen verlangen). Laut diesen Bedingungen speichert MET Norway die IP-Adresse und die Koordinaten jeder Anfrage in seinen Protokollen, in seinem Rechenzentrum in Oslo.</p>
+<p>Die Wetterdaten liefert das Norwegische Meteorologische Institut (<strong>MET Norway</strong>), aber die App fragt dort nicht direkt an: Seit Version 1.0.3 fragt sie unsere Daten-Website bei Cloudflare und sendet ihr die <strong>auf zwei Dezimalstellen gerundeten Koordinaten des Ortes</strong>, also auf etwa einen Kilometer genau. Die Website fragt in ihrem Namen bei MET Norway an, gibt sich dabei als Aire sin sustos zu erkennen und bewahrt die Vorhersage für jeden Punkt auf, bis sie abläuft, um sie allen zu geben, die danach fragen. So <strong>erhält MET Norway keine Anfragen von deinem Handy</strong>: Es bekommt die Koordinaten, aber weder deine IP-Adresse noch sonst etwas über dich. Wir führen keine Protokolle darüber, wer anfragt; Cloudflare erhält deine IP-Adresse, wie bei den Pollendaten. Versionen vor 1.0.3 fragten direkt bei MET Norway an, das laut seinen Nutzungsbedingungen die IP-Adresse und die Koordinaten jeder Anfrage in seinen Protokollen speichert, in seinem Rechenzentrum in Oslo.</p>
 
 <h3>Der Ortsname und die Städtesuche</h3>
 <p>Wenn du deinen Standort verwendest, fragt die App Android selbst nach dem Namen des Ortes, der zu diesen Koordinaten gehört, und die Städtesuche sendet den Text, den du eingibst, an Android. Auf den meisten Handys wird dieser Dienst (der Geocoder von Android) von <strong>Google</strong> bereitgestellt, das die Daten gemäß seiner Datenschutzerklärung verarbeitet.</p>
 
 <h3>IP-Adresse</h3>
-<p>Wie bei jeder App, die sich mit dem Internet verbindet, erhalten die Server, mit denen die App kommuniziert, deine IP-Adresse: Cloudflare (die Pollen- und Luftdaten), MET Norway (das Wetter) und Google (die Ortsnamen, die Werbung und, falls eingerichtet, die Fernkonfiguration).</p>
+<p>Wie bei jeder App, die sich mit dem Internet verbindet, erhalten die Server, mit denen die App kommuniziert, deine IP-Adresse: Cloudflare (die Pollen-, Luft- und Wetterdaten) und Google (die Ortsnamen, die Werbung und, falls eingerichtet, die Fernkonfiguration).</p>
 <p>Google kann diese IP-Adresse nutzen, um einen <strong>ungefähren Standort</strong> zu schätzen, etwa auf Ebene einer Stadt oder einer Region, und damit Anzeigen auszuwählen und zu messen sowie Betrug zu verhindern.</p>
 
 <h3>Werbung: Google AdMob</h3>
@@ -94,12 +94,12 @@ Kilometer gerundeten Koordinaten des Ortes an den Wetterdienst.</p>
   <tr><th>Dienst</th><th>Wofür</th><th>Richtlinie des Anbieters</th></tr>
   <tr>
     <td>Cloudflare</td>
-    <td>Hostet die Website mit den Daten zu Pollen, Saharastaub und Luftqualität</td>
+    <td>Hostet die Website mit den Daten zu Pollen, Saharastaub und Luftqualität sowie den Server, der das Wetter bei MET Norway abfragt</td>
     <td><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td>
   </tr>
   <tr>
     <td>MET Norway</td>
-    <td>Wettervorhersage</td>
+    <td>Wettervorhersage, über unsere Website</td>
     <td><a href="https://www.met.no/en/About-us/privacy">met.no/en/About-us/privacy</a></td>
   </tr>
   <tr>

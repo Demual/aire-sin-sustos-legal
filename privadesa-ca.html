@@ -36,9 +36,9 @@
 <div class="clave">
 <p><strong>En una frase:</strong> aquesta aplicació no té comptes d'usuari i
 <strong>les teves al·lèrgies i els teus llocs no surten del teu telèfon</strong>.
-Per donar-te la previsió només envia l'imprescindible: la zona d'uns 50 km
-on es troba el lloc, al nostre web de dades, i les seves coordenades arrodonides
-a un quilòmetre, al servei meteorològic.</p>
+Per donar-te la previsió només envia al nostre web de dades l'imprescindible:
+la zona d'uns 50 km on es troba el lloc i, per al temps, les seves coordenades
+arrodonides a un quilòmetre.</p>
 </div>
 
 <h2>Qui és el responsable</h2>
@@ -74,13 +74,13 @@ a un quilòmetre, al servei meteorològic.</p>
 <p>Aquestes dades es generen cada dia a partir dels models del Servei de Vigilància Atmosfèrica de Copernicus (CAMS) i es publiquen al nostre web de dades, <code>aire-sin-sustos.pages.dev</code>, allotjat a <strong>Cloudflare</strong>. El web està dividit en quadres de mig grau (uns 50 km de costat), i l'aplicació baixa el del lloc que consultes. <strong>La petició només porta el nom del quadre</strong> (per exemple, «37.0_-4.0»), no les coordenades del lloc. No tenim servidors propis ni conservem registres; Cloudflare rep la teva adreça IP, com qualsevol servidor web, i la tracta segons la seva política.</p>
 
 <h3>La previsió del temps: MET Norway</h3>
-<p>El temps el proporciona l'Institut Meteorològic de Noruega (<strong>MET Norway</strong>). Per demanar-lo, l'aplicació li envia les <strong>coordenades del lloc arrodonides a dos decimals</strong>, al voltant d'un quilòmetre, i un identificador de l'aplicació (el <em>User-Agent</em> que exigeixen les seves condicions). Segons aquestes condicions, MET Norway conserva als seus registres, al seu centre de dades d'Oslo, l'adreça IP i les coordenades de cada petició.</p>
+<p>El temps el proporciona l'Institut Meteorològic de Noruega (<strong>MET Norway</strong>), però l'aplicació no l'hi demana directament: des de la versió 1.0.3 el demana al nostre web de dades, a Cloudflare, amb les <strong>coordenades del lloc arrodonides a dos decimals</strong>, al voltant d'un quilòmetre. El web el demana a MET Norway en nom seu, identificant-se com a Aire sin sustos, i desa la previsió de cada punt fins que caduca, per donar-la a tothom qui hi pregunti. Així <strong>MET Norway no rep peticions des del teu telèfon</strong>: li arriben les coordenades, però no la teva adreça IP ni res més de tu. No desem registres de qui pregunta; Cloudflare rep la teva adreça IP, com amb les dades del pol·len. Les versions anteriors a la 1.0.3 demanaven el temps directament a MET Norway, que, segons les seves condicions, conserva als seus registres, al seu centre de dades d'Oslo, l'adreça IP i les coordenades de cada petició.</p>
 
 <h3>El nom del lloc i el cercador de ciutats</h3>
 <p>Quan fas servir la teva ubicació, l'aplicació pregunta al mateix Android el nom del lloc que correspon a aquestes coordenades, i el cercador de ciutats envia a Android el text que escrius. A la majoria de telèfons aquest servei (el geocodificador d'Android) el presta <strong>Google</strong>, que el tracta segons la seva política de privadesa.</p>
 
 <h3>Adreça IP</h3>
-<p>Com en qualsevol aplicació que es connecta a internet, els servidors amb els quals es comunica l'app reben la teva adreça IP: Cloudflare (les dades del pol·len i de l'aire), MET Norway (el temps) i Google (el nom dels llocs, la publicitat i, si està configurada, la configuració remota).</p>
+<p>Com en qualsevol aplicació que es connecta a internet, els servidors amb els quals es comunica l'app reben la teva adreça IP: Cloudflare (les dades del pol·len, de l'aire i del temps) i Google (el nom dels llocs, la publicitat i, si està configurada, la configuració remota).</p>
 <p>Google pot fer servir aquesta IP per estimar una <strong>ubicació aproximada</strong>, de l'ordre d'una ciutat o una regió, amb la qual triar i mesurar els anuncis i prevenir fraus.</p>
 
 <h3>Publicitat: Google AdMob</h3>
@@ -94,12 +94,12 @@ a un quilòmetre, al servei meteorològic.</p>
   <tr><th>Servei</th><th>Per a què</th><th>La seva política</th></tr>
   <tr>
     <td>Cloudflare</td>
-    <td>Allotja el web amb les dades del pol·len, la calitja i la qualitat de l'aire</td>
+    <td>Allotja el web amb les dades del pol·len, la calitja i la qualitat de l'aire, i el servidor que demana el temps a MET Norway</td>
     <td><a href="https://www.cloudflare.com/privacypolicy/">cloudflare.com/privacypolicy</a></td>
   </tr>
   <tr>
     <td>MET Norway</td>
-    <td>Previsió del temps</td>
+    <td>Previsió del temps, a través del nostre web</td>
     <td><a href="https://www.met.no/en/About-us/privacy">met.no/en/About-us/privacy</a></td>
   </tr>
   <tr>
